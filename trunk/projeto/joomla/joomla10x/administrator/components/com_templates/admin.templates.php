@@ -1,7 +1,7 @@
 <?php
 /**
 * @version $Id: admin.templates.php 10003 2008-02-08 11:16:37Z willebil $
-* @package Joomla
+* @package Joomla / Tradução idioma pt-br 15-02-2008 /por: Joomla Brasil - www.joomlabr.org
 * @subpackage Templates
 * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
 * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL, see LICENSE.php
@@ -166,7 +166,7 @@ function viewTemplates( $option, $client ) {
 			$row->name 		= $element->getText();
 
 			$element 		= &$root->getElementsByPath('creationDate', 1);
-			$row->creationdate = $element ? $element->getText() : 'Unknown';
+			$row->creationdate = $element ? $element->getText() : 'Nenhum';
 
 			$element 		= &$root->getElementsByPath('author', 1);
 			$row->author 	= $element ? $element->getText() : 'Unknown';
@@ -277,7 +277,7 @@ function removeTemplate( $cid, $option, $client ) {
 	$cur_template = $database->loadResult();
 
 	if ($cur_template == $cid) {
-		mosErrorAlert( "Você não pode apagar o tema em uso" );
+		mosErrorAlert( "Você não pode deletar template em uso" );
 	}
 
 	// Un-assign
@@ -289,7 +289,7 @@ function removeTemplate( $cid, $option, $client ) {
 	$database->setQuery( $query );
 	$database->query();
 
-	mosRedirect( 'index2.php?option=com_installer&element=template&client='. $client .'&task=remove&cid[]='. $cid );
+	mosRedirect( 'index2.php?option=com_installer&element=template&client='. $client .'&task=remove&cid[]='. $cid . '&' . josSpoofValue() . '=1');
 }
 
 function editTemplateSource( $p_tname, $option, $client ) {
@@ -307,7 +307,7 @@ function editTemplateSource( $p_tname, $option, $client ) {
 
 		HTML_templates::editTemplateSource( $p_tname, $content, $option, $client );
 	} else {
-		mosRedirect( 'index2.php?option='. $option .'&client='. $client, 'Operação Falhou: não foi possível abrir'. $file );
+		mosRedirect( 'index2.php?option='. $option .'&client='. $client, 'Operação Falhou: Não pôde abrir'. $file );
 	}
 }
 
@@ -542,6 +542,6 @@ function savePositions( $option ) {
 			$database->query();
 		}
 	}
-	mosRedirect( 'index2.php?option='. $option .'&task=positions', 'Positions saved' );
+	mosRedirect( 'index2.php?option='. $option .'&task=positions', 'Posições Salvas' );
 }
 ?>
