@@ -1,7 +1,7 @@
 <?php
 /**
 * @version $Id: toolbar.templates.php 10002 2008-02-08 10:56:57Z willebil $
-* @package Joomla
+* @package Joomla / Tradução idioma pt-br 15-02-2008 /por: Joomla Brasil - www.joomlabr.org
 * @subpackage Templates
 * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
 * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL, see LICENSE.php

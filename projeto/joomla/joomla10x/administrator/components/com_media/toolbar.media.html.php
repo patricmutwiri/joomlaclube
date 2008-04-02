@@ -1,7 +1,7 @@
 <?php
 /**
 * @version $Id: toolbar.media.html.php 10002 2008-02-08 10:56:57Z willebil $
-* @package Joomla
+* @package Joomla / Tradução idioma pt-br 15-02-2008 /por: Joomla Brasil - www.joomlabr.org
 * @subpackage Massmail
 * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
 * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL, see LICENSE.php
@@ -26,9 +26,9 @@ class TOOLBAR_media {
 
 	function _DEFAULT() {
 		mosMenuBar::startTable();
-		mosMenuBar::custom('upload','upload.png','upload_f2.png','Upload',false);
+		mosMenuBar::custom('upload','upload.png','upload_f2.png','Enviar',false);
 		mosMenuBar::spacer();
-		mosMenuBar::custom('newdir','new.png','new_f2.png','Create' ,false);
+		mosMenuBar::custom('newdir','new.png','new_f2.png','Criar' ,false);
 		mosMenuBar::spacer();
 		mosMenuBar::cancel();
 		mosMenuBar::spacer();

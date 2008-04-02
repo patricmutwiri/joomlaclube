@@ -1,7 +1,7 @@
 <?php
 /**
 * @version $Id: admin.media.php 10002 2008-02-08 10:56:57Z willebil $
-* @package Joomla
+* @package Joomla / Tradução idioma pt-br 15-02-2008 /por: Joomla Brasil - www.joomlabr.org
 * @subpackage Massmail
 * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
 * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL, see LICENSE.php
@@ -54,7 +54,7 @@ switch ($task) {
 
 	case 'newdir':
 		if (ini_get('safe_mode')=='On') {
-			mosRedirect( "index2.php?option=com_media&listdir=".$_POST['dirPath'], "Não é possivel criar diretórios enquanto estiver a executar em MODO SEGURO já que poderia causar problemas." );
+			mosRedirect( "index2.php?option=com_media&listdir=".$_POST['dirPath'], "Directory creation not allowed while running in SAFE MODE as this can cause problems." );
 		} else {
 			create_folder( $dirPath );
 		}
@@ -177,7 +177,7 @@ function do_upload($file, $dest_dir) {
 	josSpoofCheck();
 
 	if (empty($file['name'])) {
-		mosRedirect( "index2.php?option=com_media&listdir=".$_POST['dirPath'], "Upload file not selected" );
+		mosRedirect( "index2.php?option=com_media&listdir=".$_POST['dirPath'], "Não selecionado arquivo para enviar" );
 	}
 	if (file_exists($dest_dir.$file['name'])) {
 		mosRedirect( "index2.php?option=com_media&listdir=".$_POST['dirPath'], "FALHA no carregamento. O arquivo já existe" );
