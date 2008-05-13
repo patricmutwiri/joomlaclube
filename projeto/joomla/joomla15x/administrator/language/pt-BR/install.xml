@@ -10,11 +10,11 @@
     <authorUrl>www.joomla.com.br</authorUrl>
     <copyright>(C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <description><![CDATA[Localization of Joomla! 1.5 in Brazilian Portuguese language - Administrator.<br/>
-				 Copyrights: 2007 Joomla! Brasil.<br/>
-				 All rights reserved.<br/>
-				 <a href="http://www.joomla.com.br" target="_blank">Joomla! Brasil</a> is the only holder of the copyrights of the installed translation.<br/>
-				 According to the license guidelines of <a href="http://www.opensourcematters.org" target="_blank">OpenSourceMatters</a> and <a href="http://www.joomla.org" target="_blank">Joomla!</a>, since version 1.5 of Joomla!, all language files must be licensed under <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank"> GNU/GPL license (v.2.0)</a>. The current translation is licensed under this license. If you find any typing mistakes, errors, incorrect translations or you want to suggest improvements, please contact the <a href="mailto:traducao@joomla.com.br">author</a>.<br/><br/>]]>
+    <description><![CDATA[Arquivos de Idioma em Português Brasileiro para Joomla! 1.5 - Administração.<br/>
+				 Copyrights: 2007 - 2008 Joomla! Brasil.<br/>
+				 Todos os direitos reservados.<br/>
+				 <a href="http://www.joomla.com.br" target="_blank">Joomla! Brasil</a> é o único detentor dos copyrights desta tradução.<br/>
+				 De acordo com termo de licenciamento de <a href="http://www.opensourcematters.org" target="_blank">OpenSourceMatters</a> e <a href="http://www.joomla.org" target="_blank">Joomla!</a>, a partir da versão 1.5 do Joomla!, todos os arquivos de idioma devem ser licenciados sob a <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank"> licença GNU/GPL (v.2.0)</a>. Esta tradução está licenciada sob esta licença. Se você encontrar algum erro de digitação, erros, traduções incorretas ou deseja sugerir melhorias, por favor, entre em contato com o <a href="mailto:traducao@joomla.com.br">coordenador</a> da tradução.<br/><br/>]]>
 	</description>
     <files>
 		<filename>pt-BR.com_admin.ini</filename>
