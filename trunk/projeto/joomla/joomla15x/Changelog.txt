@@ -1,0 +1,25 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizada o changelog do Joomla 1.5.x Portugues Brasil gerenciado pela
+JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+-------------------- 1.5.x Lanaçamentos [Estável] ------------------
+
+28-Mar-2009 Trorram (Joab)
+ # Autalizado o pacote para Portugues.
