@@ -7,9 +7,11 @@
    1 ) O pacote deverá ser totalmente em Portugues.
 
 
-   2 )O nome do arquivo será:
+   2 ) O nome do arquivo será:
 
-	joomla15x_Pt_Br_jcb_ultimo.zip
+	joomla15x_Pt_Br_jcb_completo.zip
+
+           **xx é a versão do Joomla
 
 
    Após fechar o pacote com suas alterações deverá ser inserido no Changelog. O que
@@ -28,6 +30,13 @@
 
 	Dentro da pasta pt-Br Insere todos os aquivos, assim por diante.
 
+  4 ) Se a versão do Joomla foi alterada deverá ser inserido o novo pacote.
+
+	Por exemplo: 
+
+ 		Joomla 1.5.9 e a nova 1.5.10. A versão 9 deverá ser mantida no SvN.
+	E criar um novo pacote para versão 10, o passo 2 somente é feita para mesma
+	versão. Assim em necessidades futuras poderá ser baixadas versões anteriores.
 	
 
 
