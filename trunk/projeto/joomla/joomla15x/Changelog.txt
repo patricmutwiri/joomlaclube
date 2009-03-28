@@ -21,6 +21,16 @@ $ -> Language fix or change
 
 -------------------- 1.5.x Lanaçamentos [Estável] ------------------
 
+28-Mar-2009 ElvisVinicius
+ ^ Inserid "pt-BR" na tag <forceLang></forceLang> para forçar idioma da instalação
+	^ (installation) localiase.xml linha 3
+ $ Correção pt-BR: ativado|desativado invertidos
+	^ (backend) pt-BR.ini linhas 397/398
+ $ Inserido créditos JCB:
+	+ (backend)  pt-BR.ini linha 307
+	+ (frontend) pt-BR.mod_footer.ini linha 11
+
 28-Mar-2009 Trorram (Joab)
  # Autalizado o pacote para Portugues.
  $ Atualizado os arquivos de linguagem Pt-Br
+
