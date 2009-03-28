@@ -1,0 +1,37 @@
+
+
+	Joomla 1.5 Instruções para o pacote.
+
+ 
+
+   1 ) O pacote deverá ser totalmente em Portugues.
+
+
+   2 )O nome do arquivo será:
+
+	joomla15x_Pt_Br_jcb_ultimo.zip
+
+
+   Após fechar o pacote com suas alterações deverá ser inserido no Changelog. O que
+	foi alterado.
+
+   3 ) Todo o arquivo alterado ou inserido no Joomla 1.5 devera ser colocado no Arquivos 		alterados.
+
+       POr favor seguir as pastas.
+
+	Por exemplo:
+	
+	Inserido a linguagem em Portuges,
+
+	/arquivosalterado/languages/ pt-br/*
+
+
+	Dentro da pasta pt-Br Insere todos os aquivos, assim por diante.
+
+	
+
+
+
+		** OBs ***
+
+	Se tiver alguma duvida favor postar na JCB em nosso forum.
