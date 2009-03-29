@@ -21,8 +21,12 @@ $ -> Language fix or change
 
 -------------------- 1.5.x Lanaçamentos [Estável] ------------------
 
+29-Mar-2009 ElvisVinicius
+ + Inserida meta tag generator da JCB
+ 	/libraries/joomla/document/html/renderer/head.php linha 84
+
 28-Mar-2009 ElvisVinicius
- ^ Inserid "pt-BR" na tag <forceLang></forceLang> para forçar idioma da instalação
+ ^ Inserido "pt-BR" na tag <forceLang></forceLang> para forçar idioma da instalação
 	^ (installation) localiase.xml linha 3
  $ Correção pt-BR: ativado|desativado invertidos
 	^ (backend) pt-BR.ini linhas 397/398
