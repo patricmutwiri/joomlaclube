@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!-- Translated by Elvis Vinicius <elvisvinicius@gmail.com> 2009-04-09 -->
+<joomfish type="contentelement">
+  <name>Banners - Cliente</name>
+  <author>R. Muilwijk</author>
+  <version>2.0.3</version>
+  <description>Definição do componente padrão de banner</description>
+  <reference>
+  	<table name="bannerclient">
+  		<field type="referenceid" name="cid" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1">Nome do Cliente</field>
+  		<field type="text" name="contact" translate="1">Nome do Contato</field>
+  		<field type="text" name="email" translate="1">e-mail do Contato</field>
+  		<field type="textarea" name="extrainfo" translate="1">Informação Adicional</field>
+  	</table>
+  </reference>
+</joomfish>

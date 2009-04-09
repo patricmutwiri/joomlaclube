@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!-- Translated by Elvis Vinicius <elvisvinicius@gmail.com> 2009-04-09 -->
+<joomfish type="contentelement">
+  <name>Banners</name>
+  <author>R. Muilwijk</author>
+  <version>2.0.3</version>
+  <description>Definição do componente padrão de banner</description>
+  <reference>
+  	<table name="banner">
+  		<field type="referenceid" name="bid" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1">Name do Banner</field>
+		<field type="text" name="imageurl" translate="1">Nome do Arquivo do Banner</field>
+  		<field type="text" name="clickurl" translate="1">URL do Clique</field>
+  		<field type="textarea" name="custombannercode" translate="1">Código personalizado do banner</field>
+  	</table>
+  </reference>
+</joomfish>

@@ -1,0 +1,50 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizado o changelog do Joom!Fish 2.0.2 Português do Brasil gerenciado
+pela JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+------------------------------- 2.0.3 [Estável] --------------------------------
+
+09-Abr-2009 ElvisVinicius
+ ^ Atualização do XML de instalação.
+	^ /manifest.xml
+
+ ^ Arquivo de imagem da bandeira do Brasil renomeado para 'pt.gif'.
+ 	! A identificação do idioma português é retirnada como 'pt'.
+	^ /site/images/flags/pt.gif
+
+ $ Inclusão de novas palavras/traduções da versão 2.0.2 e correção na codificação
+ 	de texto.
+ 	+ /admin/language/pt-BR.com_joomfish.ini
+
+ $ Tradução dos 'Elementos de Conteúdo'
+	^ /admin/contentelements/banner.xml
+	^ /admin/contentelements/bannerclient.xml
+	^ /admin/contentelements/categories.xml
+	^ /admin/contentelements/contact_details.xml
+	^ /admin/contentelements/content.xml
+	^ /admin/contentelements/index.html
+	^ /admin/contentelements/menu.xml
+	^ /admin/contentelements/modules.xml
+	^ /admin/contentelements/newsfeeds.xml
+	^ /admin/contentelements/poll_data.xml
+	^ /admin/contentelements/polls.xml
+	^ /admin/contentelements/sections.xml
+	^ /admin/contentelements/users.xml
+	^ /admin/contentelements/weblinks.xml

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!-- Translated by Elvis Vinicius <elvisvinicius@gmail.com> 2009-04-09 -->
+<joomfish type="contentelement">
+  <name>Weblinks</name>
+  <author>A. Kempkens</author>
+  <version>2.0.3</version>
+  <description>Definição para o componente padrão de web links</description>
+  <reference>
+  	<table name="weblinks">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="title" translate="1">Título</field>
+  		<field type="textarea" name="description" translate="1">Descrição</field>
+  		<field type="text" name="url" translate="1">URL</field>
+  	</table>
+  </reference>
+</joomfish>
