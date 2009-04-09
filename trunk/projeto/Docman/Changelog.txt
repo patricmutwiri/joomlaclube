@@ -1,0 +1,33 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizado o changelog do Docman 1.4.x Português do Brasil gerenciado
+pela JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+------------------------------- 1.4.x [Estável] --------------------------------
+
+09-Abr-2009 ElvisVinicius
+ $ Tradução dos parâmetros
+	/docman.xml
+	/themes/default/themeDetails.xml
+
+ $ Tradução dos links post-instalação
+	install.docman.helper.php linhas 283 e 290
+
+ $ Correção da tradução: palavra 'secção' => 'seção' linhas 99 220
+ 	language/brazilian_portuguese.backend.php
