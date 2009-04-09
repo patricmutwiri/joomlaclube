@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!-- Translated by Elvis Vinicius <elvisvinicius@gmail.com> 2009-04-09 -->
+<joomfish type="contentelement">
+  <name>Usuários</name>
+  <author>I. Apostolov</author>
+  <version>2.0.3</version>
+  <description>Definição para o componente padrão de gerenciamento de usuários</description>
+  <reference>
+  	<table name="users">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1">Nome</field>
+  	</table>
+  </reference>
+</joomfish>

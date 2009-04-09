@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!-- Translated by Elvis Vinicius <elvisvinicius@gmail.com> 2009-04-09 -->
+<joomfish type="contentelement">
+  <name>Menus</name>
+  <author>A. Kempkens</author>
+  <version>2.0.3</version>
+  <description>Definição para o gerenciamento padrão de menus</description>
+  <reference>
+  	<table name="menu">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1">Nome</field>
+  		<field type="text" name="alias" translate="1" posthandler="filterName">Apelido do Menu</field>
+  		<field type="params" name="params" translate="1">Parâmetros</field>
+  		<field type="readonlytext" name="link" translate="1"  posthandler="saveUrlParams">Link</field>
+  		<field type="text" name="type" translate="0">Tipo do Menu</field>
+  		<field type="checked_out_by" name="checked_out" translate="0">Última modificação por</field>
+  		<field type="checked_out_date" name="checked_out_time" translate="0">Última modificação em</field>
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <keyword>name</keyword>
+  	  <menutype>menutype</menutype>
+  	  <published>published</published>
+  	  <trash>published</trash>
+  </translationfilters>
+ </joomfish>

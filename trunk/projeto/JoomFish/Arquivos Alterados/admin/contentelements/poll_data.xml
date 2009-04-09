@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!-- Translated by Elvis Vinicius <elvisvinicius@gmail.com> 2009-04-09 -->
+<joomfish type="contentelement">
+  <name>Enquetes:opções</name>
+  <author>A. Kempkens</author>
+  <version>2.0.3</version>
+  <description>Definição para as opções de enquete</description>
+  <reference>
+  	<table name="poll_data">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="text" translate="1">Opção</field>
+  	</table>
+  </reference>
+  <translationfilters>
+  	  <polloptions_empty>text</polloptions_empty>
+  	  <pollname>pollid</pollname>
+  </translationfilters>
+</joomfish>
