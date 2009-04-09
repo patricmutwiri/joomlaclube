@@ -32,14 +32,14 @@
 
    <param name="@heading" type="heading" label="Imagens/Ícones" description="" />
    <param name="cat_image" type="list" default="1" label="Imagem da Categoria">
-      	<option value="0">No image</option>
-        <option value="1">Folder icon</option>
-        <option value="2">Thumbnail</option>
+      	<option value="0">Sem imagem</option>
+        <option value="1">Ícone de Pasta</option>
+        <option value="2">Miniatura</option>
     </param>
     <param name="doc_image" type="list" default="1" label="Imagem do Documento">
-       <option value="0">No image</option>
-       <option value="1">File icon</option>
-       <option value="2">Thumbnail</option>
+       <option value="0">Sem imagem</option>
+       <option value="1">Ícone de Arquivo</option>
+       <option value="2">Miniatura</option>
     </param>
 
    <param name="@heading" type="heading" label="Itens do Documento" />
