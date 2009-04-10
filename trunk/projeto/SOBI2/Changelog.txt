@@ -1,0 +1,26 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizado o changelog do SOBI2 RC 2.9.1.0 Joom!Fish 2.0.2 Português
+do Brasil gerenciado pela JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+---------------------------- RC 2.9.1.0 [Estável] ------------------------------
+
+09-Abr-2009 ElvisVinicius
+ ^ Atualização do XML de instalação.
+	^ /manifest.xml
