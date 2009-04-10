@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sobi2lang>
+	<language>brazilian_portuguese</language>
+	<author>Renato Ferrari</author>
+	<creationDate>October 2008</creationDate>
+	<copyright>(C) 2008 Sigsiu.NET</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>rfsouza@yahoo.com</authorEmail>
+	<authorUrl>www.renatoferrari.net</authorUrl>
+	<version>RC2.9.0.1</version>
+	<files>
+		<front_file>brazilian_portuguese.php</front_file>
+		<backend_file>admin.brazilian_portuguese.php</backend_file>
+		<flag_img>brazilian_portuguese.gif</flag_img>
+	</files>
+</sobi2lang>
