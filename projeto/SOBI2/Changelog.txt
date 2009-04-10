@@ -6,8 +6,8 @@ licensas.
 
 2. Changelog
 ------------
-Aqui disponibilizado o changelog do SOBI2 RC 2.9.1.0 Joom!Fish 2.0.2 Português
-do Brasil gerenciado pela JoomlaClube do Brasil.
+Aqui disponibilizado o changelog do SOBI2 RC 2.9.1.0 Português do Brasil
+gerenciado pela JoomlaClube do Brasil.
 
 Legenda:
 
@@ -21,6 +21,15 @@ $ -> Language fix or change
 
 ---------------------------- RC 2.9.1.0 [Estável] ------------------------------
 
-09-Abr-2009 ElvisVinicius
- ^ Atualização do XML de instalação.
-	^ /manifest.xml
+10-Abr-2009 ElvisVinicius
+ ^ Atualização dos arquivos de instalação.
+	^ /sobi2.xml
+ $ Tradução das mensagens de instalação e inclusão de queries para incluir no
+ 	banco de dados conteúdo padrão em português brasileiro.
+	^ install.sobi2.php
+
+ $ Tradução do arquivo de idioma do tinyMCE incluso no SOBI2
+	+ /includes/js/langs/brazilian_portuguese.js
+
+ $ Inclusão do XML do idioma brasileiro no ZIP de instalação
+	^ /includes/install/langs.zip/brazilian_portuguese.xml
