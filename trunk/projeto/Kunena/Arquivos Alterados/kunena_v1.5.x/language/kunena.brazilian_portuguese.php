@@ -27,6 +27,117 @@
 // Dont allow direct linking
 defined( '_JEXEC' ) or die('Acesso Restrito');
 
+// 1.0.11 and 1.5.3
+DEFINE('_KUNENA_VERSION_SVN', 'SVN Versão');
+DEFINE('_KUNENA_VERSION_DEV', 'Development Snapshot');
+DEFINE('_KUNENA_VERSION_ALPHA', 'Versao Alpha');
+DEFINE('_KUNENA_VERSION_BETA', 'Veraso Beta');
+DEFINE('_KUNENA_VERSION_RC', 'Versao RC');
+DEFINE('_KUNENA_VERSION_INSTALLED', 'Voce tem instalado o Kunena %s (%s).');
+DEFINE('_KUNENA_VERSION_SVN_WARNING', 'Never use an SVN revision for anything else other than software development!');
+DEFINE('_KUNENA_VERSION_DEV_WARNING', 'This internal release should be used only by developers and testers!');
+DEFINE('_KUNENA_VERSION_ALPHA_WARNING', 'This release should not be used on live production sites.');
+DEFINE('_KUNENA_VERSION_BETA_WARNING', 'This release is not recommended to be used on live production sites.');	
+DEFINE('_KUNENA_VERSION_RC_WARNING', 'This release may contain bugs, which will be fixed in the final version.');	
+DEFINE('_KUNENA_ERROR_UPGRADE', 'Upgrading Kunena to version %s has failed!');
+DEFINE('_KUNENA_ERROR_UPGRADE_WARN', 'Your forum may be missing some important fixes and some features may be broken.');
+DEFINE('_KUNENA_ERROR_UPGRADE_AGAIN', 'Please try to upgrade again. If you cannot upgrade to Kunena %s, you can easily downgrade to the latest working version.');
+DEFINE('_KUNENA_PAGE', 'Page');
+DEFINE('_KUNENA_RANK_NO_ASSIGNED', 'No Rank Assigned');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_GENERAL', 'Problems detected in Community Builder integration:');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_INSTALL', 'Community Builder integration only works if you have Community Builder version %s or higher installed.');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_PUBLISH', 'Community Builder Profile integration only works if Community Builder User profile has been published.');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_UPDATE', 'Community Builder Profile integration only works if you are using Community Builder version %s or higher.');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_XHTML', 'Community Builder Profile integration only works if Community Builder is in W3C XHTML 1.0 Trans. compliance mode.');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_INTEGRATION', 'Community Builder Profile integration only works if the forum integration plugin has been enabled in Community Builder.');
+DEFINE('_KUNENA_INTEGRATION_CB_WARN_HIDE', 'Saving the Kunena configuration will disable integration and hide this warning.');
+			
+// 1.0.10
+DEFINE('_KUNENA_BACK', 'Voltar');
+DEFINE('_KUNENA_SYNC', 'Sync');
+DEFINE('_KUNENA_NEW_SMILIE', 'Novo Smilie');
+DEFINE('_KUNENA_PRUNE', 'Punir');
+// Editor
+DEFINE('_KUNENA_EDITOR_HELPLINE_BOLD', 'Negrito Text: [b]text[/b]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_ITALIC', 'Italic text: [i]text[/i]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_UNDERL', 'Underline text: [u]text[/u]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_STRIKE', 'Strikethrough Text: [strike]Text[/strike]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_SUB', 'Subscript Text: [sub]Text[/sub]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_SUP', 'Superscript Text: [sup]Text[/sup]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_QUOTE', 'Quote text: [quote]text[/quote]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_CODE', 'Code display: [code]code[/code]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_UL', 'Unordered List: [ul] [li]text[/li] [/ul] - Tip: a list must contain List Items');
+DEFINE('_KUNENA_EDITOR_HELPLINE_OL', 'Ordered List: [ol] [li]text[/li] [/ol] - Tip: a list must contain List Items');
+DEFINE('_KUNENA_EDITOR_HELPLINE_LI', 'List Item: [li] list item [/li]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_ALIGN_LEFT', 'Align left: [left]Text[/left]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_ALIGN_CENTER', 'Align center: [center]Text[/center]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_ALIGN_RIGHT', 'Align right: [right]Text[/right]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_IMAGELINK', 'Image link: [img size=400]http://www.google.com/images/web_logo_left.gif[/img]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_IMAGELINKSIZE', 'Image link: Size');
+DEFINE('_KUNENA_EDITOR_HELPLINE_IMAGELINKURL', 'Image link: URL of the image link');
+DEFINE('_KUNENA_EDITOR_HELPLINE_IMAGELINKAPPLY', 'Image link: Apply image link');
+DEFINE('_KUNENA_EDITOR_HELPLINE_LINK', 'Link: [url=http://www.zzz.com/]This is a link[/url]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_LINKURL', 'Link: URL of the link');
+DEFINE('_KUNENA_EDITOR_HELPLINE_LINKTEXT', 'Link: Text / Description of the link');
+DEFINE('_KUNENA_EDITOR_HELPLINE_LINKAPPLY', 'Link: Apply link');
+DEFINE('_KUNENA_EDITOR_HELPLINE_HIDE','Hidden text: [hide]any hidden text[/hide] - hide part of message from Guests');
+DEFINE('_KUNENA_EDITOR_HELPLINE_SPOILER', 'Spoiler: Text is only shown after you click the spoiler');
+DEFINE('_KUNENA_EDITOR_HELPLINE_COLOR', 'Color: [color=#FF6600]text[/color]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_FONTSIZE', 'Fontsize: [size=1]text size[/size] - Tip: sizes range from 1 to 5');
+DEFINE('_KUNENA_EDITOR_HELPLINE_FONTSIZESELECTION', 'Fontsize: Select Fontsize, mark text and press the button left from here');
+DEFINE('_KUNENA_EDITOR_HELPLINE_EBAY', 'eBay: [ebay]ItemId[/ebay]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEO', 'Video: Select Provider or URL - modus');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOSIZE', 'Video: Size of the video');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOWIDTH', 'Video: Width of the video');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOHEIGHT', 'Video: Height of the video');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOPROVIDER', 'Video: Select video provider');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOID', 'Video: ID of the video - you can see it in the video URL');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOAPPLY1', 'Video: [video size=100 width=480 height=360 provider=clipfish]3423432[/video]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOURL', 'Video: URL of the video');
+DEFINE('_KUNENA_EDITOR_HELPLINE_VIDEOAPPLY2', 'Video: [video size=100 width=480 height=360]http://myvideodomain.com/myvideo[/video]');
+DEFINE('_KUNENA_EDITOR_HELPLINE_IMGPH', 'Insert [img] placeholder in the post for attached image');
+DEFINE('_KUNENA_EDITOR_HELPLINE_FILEPH', 'Insert [file] placeholder in the post for attached file');
+DEFINE('_KUNENA_EDITOR_HELPLINE_SUBMIT', 'Click here to submit your message');
+DEFINE('_KUNENA_EDITOR_HELPLINE_PREVIEW', 'Click here to see what your message will look like when submitted');
+DEFINE('_KUNENA_EDITOR_HELPLINE_CANCEL', 'Click here to cancel your message');
+DEFINE('_KUNENA_EDITOR_HELPLINE_HINT', 'bbCode Help - Tip: bbCode can be used on selected text!');
+DEFINE('_KUNENA_EDITOR_LINK_URL', ' URL: ');
+DEFINE('_KUNENA_EDITOR_LINK_TEXT', ' Text: ');
+DEFINE('_KUNENA_EDITOR_LINK_INSERT', 'Insert');
+DEFINE('_KUNENA_EDITOR_IMAGE_SIZE', ' Size: ');
+DEFINE('_KUNENA_EDITOR_IMAGE_URL', ' URL: ');
+DEFINE('_KUNENA_EDITOR_IMAGE_INSERT', 'Insert');
+DEFINE('_KUNENA_EDITOR_VIDEO_SIZE', 'Size: ');
+DEFINE('_KUNENA_EDITOR_VIDEO_WIDTH', 'Width: ');
+DEFINE('_KUNENA_EDITOR_VIDEO_HEIGHT', 'Height:');
+DEFINE('_KUNENA_EDITOR_VIDEO_URL', 'URL: ');
+DEFINE('_KUNENA_EDITOR_VIDEO_ID', 'ID: ');
+DEFINE('_KUNENA_EDITOR_VIDEO_PROVIDER', 'Provider: ');
+DEFINE('_KUNENA_BBCODE_HIDDENTEXT', '<span class="fb_quote">Something is hidden for guests. Please log in or register to see it.</span>');
+
+DEFINE('_KUNENA_PROFILE_BIRTHDAY', 'Birthday');
+DEFINE('_KUNENA_DT_MONTHDAY_FMT','%m/%d');
+DEFINE('_KUNENA_CFC_FILENAME','CSS file to be modified');
+DEFINE('_KUNENA_CFC_SAVED','CSS file saved.');
+DEFINE('_KUNENA_CFC_NOTSAVED','CSS file not saved.');
+DEFINE('_KUNENA_JS_WARN_NAME_MISSING','Your name is missing');
+DEFINE('_KUNENA_JS_WARN_UNAME_MISSING','Your username is missing');
+DEFINE('_KUNENA_JS_WARN_VALID_AZ09','Field contains forbidden letters');
+DEFINE('_KUNENA_JS_WARN_MAIL_MISSING','E-mail address is missing');
+DEFINE('_KUNENA_JS_WARN_PASSWORD2','Please enter valid password');
+DEFINE('_KUNENA_JS_PROMPT_UNAME','Please retype your new username');
+DEFINE('_KUNENA_JS_PROMPT_PASS','Please retype your new password');
+DEFINE('_KUNENA_DT_LMON_DEC', 'December');
+DEFINE('_KUNENA_DT_MON_DEC', 'Dec');
+DEFINE('_KUNENA_NOGENDER', 'Unknown');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_ERROR', 'Your Kunena installation is incomplete!');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_OFFLINE', 'Because of the above errors your Forum is now Offline and Forum Administration has been disabled.');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_REASONS', 'Possible reasons for this error:');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_1', '1) Kunena installation process has failed or timed out (try to install it again)');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_2', '2) You have removed some of the Kunena tables from your database');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_3', '3) Your database has been corrupted');
+DEFINE('_KUNENA_ERROR_INCOMPLETE_SUPPORT', 'Our support forum can be found from:');
+
 // 1.0.9
 DEFINE('_KUNENA_INSTALLED_VERSION', 'Versão instalada');
 DEFINE('_KUNENA_COPYRIGHT', 'Direitos autorais');
@@ -93,29 +204,40 @@ DEFINE('_POST_NOT_MODERATOR', 'Você não tem permissões de moderador!');
 DEFINE('_POST_NO_FAVORITED_TOPIC', 'Este tópico <b>NÃO</b> foi adicionado aos seus favoritos');
 DEFINE('_COM_C_SYNCEUSERSDESC', 'Sincronize a tabela de usuários do Kunena com a tabela de usuários do Joomla');
 DEFINE('_POST_FORGOT_EMAIL', 'Você esqueceu de incluir seu endereço de e-mail. Clique no botão Voltar do navegador para voltar e tente novamente.');
+
 DEFINE('_KUNENA_POST_DEL_ERR_FILE', 'Deletar todos os arquivos onde não esta anexado!');
 // New strings for initial forum setup. Replacement for legacy sample data
 DEFINE('_KUNENA_SAMPLE_FORUM_MENU_TITLE', 'Fórum');
 DEFINE('_KUNENA_SAMPLE_MAIN_CATEGORY_TITLE', 'Fórum principal');
 DEFINE('_KUNENA_SAMPLE_MAIN_CATEGORY_DESC', 'Esta é a categoria principal do fórum. Como um nível, uma categoria serve como um recipiente para categorias individuais ou fóruns. É também referida como uma categoria de nível 1 e deve ter uma configuração para qualquer Fórum Kunena.');
 DEFINE('_KUNENA_SAMPLE_MAIN_CATEGORY_HEADER', 'A fim de fornecer informações adicionais para seus visitantes e membros, o cabecalho do fórum pode ser aproveitado para exibir texto na parte superior de uma determinada categoria.');
+
+
 DEFINE('_KUNENA_SAMPLE_FORUM1_TITLE', 'Bem-vindo(a)');
 DEFINE('_KUNENA_SAMPLE_FORUM1_DESC', 'Incentivamos os novos membros a enviar uma curta introdução de si neste fórum. Conheçam uns aos outros e compartilhem interesses em comuns.');
+
+
 DEFINE('_KUNENA_SAMPLE_FORUM1_HEADER', '[b]Bem-vindo(a) ao fórum Kunena![/b]
 
 Conte-nos sobre você, o que gosta e por que se tornou um membro deste site.
 Damos as boas-vindas a todos os novos membros e esperamos vê-lo em atividade em nosso fórum!
+
+
 ');
 DEFINE('_KUNENA_SAMPLE_FORUM2_TITLE', 'Caixa de Sugestões');
 DEFINE('_KUNENA_SAMPLE_FORUM2_DESC', 'Tem algum comentário ou informação para compartilhar?
 Não seja tímido e envie-nos uma nota. Queremos ouví-lo e nos esforçaremos para tornar nosso site melhor e mais amigável aos nossos visitantes e membros.');
+
 DEFINE('_KUNENA_SAMPLE_FORUM2_HEADER', 'Este é o cabeçalho opcional do Fórum para a Caixa de Sugestões.');
+
 DEFINE('_KUNENA_SAMPLE_POST1_SUBJECT', 'Bem-vindo(a) ao Kunena!');
 DEFINE('_KUNENA_SAMPLE_POST1_TEXT', '[size=4][b]Bem-vindo(a) ao Kunena![/b][/size]
 
 Obrigado por escolher o Kunena para as necessidades de fórum de sua comunidade em Joomla.
 
+
 Kunena, traduzido do swahili significa "para falar", é desenvolvido por uma equipe de profissionais de código aberto com o objetivo de fornecer uma solução de fórum para o Joomla, bem unificada e de alta qualidade. Kunena suporta componentes de redes sociais como Comunidade Builder e JomSocial.
+
 
 
 [size=4][b]Recursos adicionais do Kunena[/b][/size]
@@ -138,23 +260,29 @@ Kunena, traduzido do swahili significa "para falar", é desenvolvido por uma equ
 [b]Siga o Kunena no Twitter:[/b] [url=https://twitter.com/kunena]http://www.kunena.com/twitter[/url]
 (https://twitter.com/kunena)');
 
+
 // 1.0.6
 DEFINE('_KUNENA_JOMSOCIAL', 'JomSocial');
 
 // 1.0.5
 DEFINE('_COM_A_HIGHLIGHTCODE_DESC', 'Ativa o javascript de realçamento da tag código (sintaxe colorida) do Kunena. Se os seus usuários publicarem código "php" ou fragmentos semelhantes dentro das tags código, ativar isto irá colorir o código. Se o seu fórum não faz uso destas publicações de linguagem de programação, pode querer desativá-lo para evitar que as tags código sejam mal formadas.');
 DEFINE('_COM_A_HIGHLIGHTCODE', 'Ativar Realçamento de Código');
+
+
 DEFINE('_COM_A_RSS_TYPE', 'Tipo Padrão de RSS');
 DEFINE('_COM_A_RSS_TYPE_DESC', 'Escolha entre os Feeds RSS por tópico ou publicação. Por tópico significa que apenas uma entrada por tópico será listada no Feed RSS, independentemente de quantas publicações foram feitas dentro desse segmento. Por tópico cria um Feed RSS mais curto e compacto, mas não irá listar todas as respostas feitas.');
+
 DEFINE('_COM_A_RSS_BY_THREAD', 'Por Tópico');
 DEFINE('_COM_A_RSS_BY_POST', 'Por Mensagem');
 DEFINE('_COM_A_RSS_HISTORY', 'Histórico RSS');
 DEFINE('_COM_A_RSS_HISTORY_DESC', 'Selecione quanto do histórico deverá ser incluído no Feed RSS. O padrão é de 1 mês, mas pode querer limitá-lo a 1 semana em sites com alto volume.');
+
 DEFINE('_COM_A_RSS_HISTORY_WEEK', '1 Semana');
 DEFINE('_COM_A_RSS_HISTORY_MONTH', '1 Mês');
 DEFINE('_COM_A_RSS_HISTORY_YEAR', '1 Ano');
 DEFINE('_COM_A_FBDEFAULT_PAGE', 'Página padrão do Kunena');
 DEFINE('_COM_A_FBDEFAULT_PAGE_DESC', 'Selecione a página padrão do Kunena que será exibida quando um link for clicado ou o fórum for acessado inicialmente. O padrão é em Discussões Recentes. Deve ser definida para Categorias para temas diferentes do default_ex. Se Minhas Discussões for Selecionado, visitantes serão padronizados para Discussões Recentes.');
+
 DEFINE('_COM_A_FBDEFAULT_PAGE_RECENT', 'Discussões Recentes');
 DEFINE('_COM_A_FBDEFAULT_PAGE_MY', 'Minhas Discussões');
 DEFINE('_COM_A_FBDEFAULT_PAGE_CATEGORIES', 'Categorias');
@@ -183,20 +311,27 @@ DEFINE('_COM_A_SHOWVIDEOTAG', 'Exibir tag video na barra do editor');
 DEFINE('_COM_A_SHOWVIDEOTAG_DESC', 'Configure para <strong>"Sim"</strong> se quiser que a tag [video] seja listada na barra do editor de publicação.');
 DEFINE('_COM_A_SHOWEBAYTAG', 'Exibir tag eBay na barra do editor');
 DEFINE('_COM_A_SHOWEBAYTAG_DESC', 'Configure para <strong>"Sim"</strong> se você quer que a tag [ebay] seja listada na barra do editor de publicação.');
+
 DEFINE('_COM_A_TRIMLONGURLS', 'Aparar URLs longas');
 DEFINE('_COM_A_TRIMLONGURLS_DESC', 'Configure para <strong>"Sim"</strong> se quiser que URLs longas sejam aparadas. Veja configurações de aparo de URL no inicio e no fim.');
+
 DEFINE('_COM_A_TRIMLONGURLSFRONT', 'Parte inicial de URLs aparadas');
 DEFINE('_COM_A_TRIMLONGURLSFRONT_DESC', 'Número de caracteres para porção inicial de URLs aparadas. Aparar URLs longas deve ser setado para <strong>"Sim"</strong>.');
+
 DEFINE('_COM_A_TRIMLONGURLSBACK', 'Parte final de URLs aparadas');
 DEFINE('_COM_A_TRIMLONGURLSBACK_DESC', 'Número de caracteres para porção final de URLs aparadas. Aparar URLs longas deve ser setado para <strong>"Sim"</strong>.');
+
 DEFINE('_COM_A_AUTOEMBEDYOUTUBE', 'Auto incorporar vídeos do YouTube');
 DEFINE('_COM_A_AUTOEMBEDYOUTUBE_DESC', 'Configure para <strong>"Sim"</strong> se você quer que URLs de vídeos do youtube sejam automaticamente incorporadas.');
+
 DEFINE('_COM_A_AUTOEMBEDEBAY', 'Auto incorporar itens do eBay');
 DEFINE('_COM_A_AUTOEMBEDEBAY_DESC', 'Configure para <strong>"Sim"</strong> se você quer que pesquisas e itens do eBay sejam automaticamente incorporados.');
+
 DEFINE('_COM_A_EBAYLANGUAGECODE', 'Código de idioma do widget do eBay');
 DEFINE('_COM_A_EBAYLANGUAGECODE_DESC', 'É importante configurar o código de idioma apropriado porque o widget do eBay deriva a linguagem e moeda dele. O padrão é en-us para ebay.com. Exemplos: ebay.de: de-de, ebay.at: de-at, ebay.co.uk: en-gb');
 DEFINE('_COM_A_KUNENA_SESSION_TIMEOUT', 'Duração da Sessão');
 DEFINE('_COM_A_KUNENA_SESSION_TIMEOUT_DESC', 'O padrão é 1800 [segundos]. A duração da sessão (timeout) em segundos é similar à duração da sessão do Joomla. A duração da sessão é importante para recálculo de direitos de accesso, exibição de quem está online e indicador de NOVA mensagem. Uma vez que uma sessão expire após este tempo, os direitos de acesso e o indicador de NOVA Mensagem são reiniciados.');
+
 
 // Advanced administrator merge-split functions
 DEFINE('_GEN_MERGE', 'Mesclar');
@@ -214,6 +349,7 @@ DEFINE('_POST_SPLIT_TOPIC_NOT_CHANGED', 'Modificação do tópico falhou.');
 DEFINE('_POST_TOPIC_NOT_SPLIT', 'Divisão falhou.');
 DEFINE('_POST_DUPLICATE_IGNORED', 'Duplicar, mensagem idêntica foi ignorada.');
 DEFINE('_POST_SPLIT_HINT', '<br />Dica: Você pode promover uma mensagem à posição de tópico se a selecionar na segunda coluna e marcar nada para dividir.<br />');
+
 DEFINE('_POST_LINK_ORPHANS_TOPIC', 'linkar órfãos ao tópico');
 DEFINE('_POST_LINK_ORPHANS_TOPIC_TITLE', 'Linkar órfãos à nova mensagem do tópico.');
 DEFINE('_POST_LINK_ORPHANS_PREVPOST', 'linkar órfãos à mensagem anterior');
@@ -251,6 +387,8 @@ DEFINE('_KUNENA_COPY_OK', 'OK');
 DEFINE('_KUNENA_CSS_SAVE', 'Salvando arquivo CSS deve ser aqui... arquivo="%file%"');
 DEFINE('_KUNENA_UP_ATT_10', 'A tabela de anexos foi atualizada com sucesso com as últimas estrututas das séries 1.0.x!');
 DEFINE('_KUNENA_UP_ATT_10_MSG', 'Os anexos na tabela de mensagens foram atualizados com sucesso para a estrutura da última série 1.0.x!');
+
+
 DEFINE('_KUNENA_TOPIC_MOVED', '---');
 DEFINE('_KUNENA_TOPIC_MOVED_LONG', '------------');
 DEFINE('_KUNENA_POST_DEL_ERR_CHILD', 'Não se pode promover iniciantes na hierarquia das mensagens. Nada Excluído.');
@@ -258,6 +396,8 @@ DEFINE('_KUNENA_POST_DEL_ERR_MSG', 'Impossível excluir a(s) mensagens(s) - nada
 DEFINE('_KUNENA_POST_DEL_ERR_TXT', 'Impossível excluir os textos da(s) mensagens(s). Atualize manualmente a base de dados (mesid=%id%).');
 DEFINE('_KUNENA_POST_DEL_ERR_USR', 'Tudo excluído, mas falhou ao atualizar as estatísticas de mensagens do usuário!');
 DEFINE('_KUNENA_POST_MOV_ERR_DB', "Erro severo na base de dados. Atualize a sua base de dados manualmente, assim as respostas ao tópico serão combinadas com o fórum novo também");
+
+
 DEFINE('_KUNENA_UNIST_SUCCESS', "O componente Kunena foi desinstalado com sucesso!");
 DEFINE('_KUNENA_PDF_VERSION', 'Versão do Componente de Fórum Kunena: %version%');
 DEFINE('_KUNENA_PDF_DATE', 'Gerado: %date%');
@@ -273,6 +413,7 @@ DEFINE('_KUNENA_SYNC_USERS_DESC', 'Sincronizar tabela de usuários do Kunena com
 DEFINE('_KUNENA_A_MAIL_ADMIN', 'Administradores de e-mail');
 DEFINE('_KUNENA_A_MAIL_ADMIN_DESC',
     'Setar para <strong>"Sim"</strong> se quiser que as notificações por e-mail para cada nova resposta publicada sejam enviados para o(s) administrador(es) do sistema habilitado(s).');
+
 DEFINE('_KUNENA_RANKS_EDIT', 'Editar Rank');
 DEFINE('_KUNENA_USER_HIDEEMAIL', 'Ocultar e-mail');
 DEFINE('_KUNENA_DT_DATE_FMT','%d/%m/%Y');
@@ -338,26 +479,37 @@ DEFINE('_KUNENA_HEADERADD', 'Título do Fórum:');
 DEFINE('_KUNENA_ADVANCEDDISPINFO', "Mostrar Fórum");
 DEFINE('_KUNENA_CLASS_SFX', "Sufixo da Classe CSS do Fórum");
 DEFINE('_KUNENA_CLASS_SFXDESC', "Sufixo de CSS aplicado ao índice, mostrar categoria, visão e permite diferentes aparências por fórum.");
+
 DEFINE('_COM_A_USER_EDIT_TIME', 'Editar tempo do usuário');
 DEFINE('_COM_A_USER_EDIT_TIME_DESC', 'Insira 0 para tempo ilimitado, ou então o espaço de tempo em segundos da mensagem ou da última modificação para permitir edição.');
+
+
 DEFINE('_COM_A_USER_EDIT_TIMEGRACE', 'Tempo de Graça da Edição do usuário');
 DEFINE('_COM_A_USER_EDIT_TIMEGRACE_DESC', 'Padrão 600 [segundos], permite salvar a modificação até 600 segundos depois que o link de edição desaparece.');
+
+
 DEFINE('_KUNENA_HELPPAGE','Ativar página de Ajuda');
 DEFINE('_KUNENA_HELPPAGE_DESC','Se ajustado para <strong>"Sim"</strong> um link para a página de Ajuda será mostrado do menu do cabeçalho.');
+
 DEFINE('_KUNENA_HELPPAGE_IN_FB','Mostra a ajuda no Kunena');
 DEFINE('_KUNENA_HELPPAGE_IN_KUNENA_DESC','Se ajustado para <strong>"Sim"</strong> o texto do conteúdo de ajuda será incluído no Kunena e a ajuda externa não vai funcionar. <b>Nota:</b> Você pode adicionar um "ID de Conteúdo de Ajuda" .');
+
 DEFINE('_KUNENA_HELPPAGE_CID','ID do Conteúdo de Ajuda');
 DEFINE('_KUNENA_HELPPAGE_CID_DESC','Você deve ajustar a configuração "Mostra ajuda no Kunena" para <b>"SIM"</b>.');
+
 DEFINE('_KUNENA_HELPPAGE_LINK',' Ajuda em link de Página Externa');
 DEFINE('_KUNENA_HELPPAGE_LINK_DESC','Se você mostrar o link externo, por favor ajuste a configuração "Mostra ajuda no Kunena" para <b>"Não"</b>.');
+
 DEFINE('_KUNENA_RULESPAGE','Permitir Páginas de Regras');
 DEFINE('_KUNENA_RULESPAGE_DESC','Se ajustar para <strong>"Sim"</strong> um link será mostrado no cabeçalho do fórum.');
 DEFINE('_KUNENA_RULESPAGE_IN_FB','Mostrar Regras no Kunena');
 DEFINE('_KUNENA_RULESPAGE_IN_KUNENA_DESC','Se ajustado para <strong>"Sim"</strong> o texto do conteúdo das regras será o do Kunena e o link externo não funcionará. <b>Nota:</b> Você pode adicionar um "ID de Conteúdo de Regras" .');
+
 DEFINE('_KUNENA_RULESPAGE_CID','ID de Conteúdo de Regras');
 DEFINE('_KUNENA_RULESPAGE_CID_DESC','Você deve ajustar para a configuração <b>"SIM"</b> "Mostrar regras no Kunena".');
 DEFINE('_KUNENA_RULESPAGE_LINK',' Link da página externa de Regras');
 DEFINE('_KUNENA_RULESPAGE_LINK_DESC','Se você mostrar o link externo de regras, por favor ajuste a configuração "Mostrar Regras no Kunena" para <b>"NÃO"</b>.');
+
 DEFINE('_KUNENA_AVATAR_GDIMAGE_NOT','Biblioteca GD não encontrada.');
 DEFINE('_KUNENA_AVATAR_GD2IMAGE_NOT','Biblioteca GD2 não encontrada.');
 DEFINE('_KUNENA_GD_INSTALLED',' Versão da biblioteca GD disponível: ');
@@ -372,6 +524,7 @@ DEFINE('_KUNENA_AVATAR_LARGE_WIDTH','Largura da Imagem Grande');
 DEFINE('_KUNENA_AVATAR_QUALITY','Qualidade do Avatar');
 DEFINE('_KUNENA_WELCOME','Bem-Vindo ao Kunena');
 DEFINE('_KUNENA_WELCOME_DESC','Obrigado por escolher o Kunena como a sua solução de Fórum. Esta tela apresenta uma avaliação rápida de todas as estatísticas de sua plataforma. Os links do lado esquerdo desta tela permitem-lhe controlar todo o aspecto do seu Fórum. Cada página tem instruções sobre como usar as ferramentas.');
+
 DEFINE('_KUNENA_STATISTIC','Estatísticas');
 DEFINE('_KUNENA_VALUE','Valor');
 DEFINE('_GEN_CATEGORY','Categoria');
@@ -394,10 +547,12 @@ DEFINE('_STATS_TOP_POSTERS','Usuários que mais publicam');
 DEFINE('_STATS_POPULAR_TOPICS','Tópicos mais populares');
 DEFINE('_COM_A_STATSPAGE','Ativar Página de Estatísticas');
 DEFINE('_COM_A_STATSPAGE_DESC','Se ajustado para <strong>"Sim"</strong> um link público será mostrado no cabeçalho do fórum para a página de estatísticas. Esta página mostrará várias estatísticas sobre o seu fórum. <em>A página de estatísticas esterá sempre disponível para os administradores, apesar desta configuração!</em>');
+
 DEFINE('_COM_C_JBSTATS','Estatísticas do Fórum');
 DEFINE('_COM_C_JBSTATS_DESC','Estatísticas do Fórum');
 DEFINE('_GEN_GENERAL','Geral');
 DEFINE('_PERM_NO_READ','Você não tem permissão para acessar a este fórum.');
+
 DEFINE('_KUNENA_SMILEY_SAVED','Smiley gravado');
 DEFINE('_KUNENA_SMILEY_DELETED','Smiley apagado');
 DEFINE('_KUNENA_CODE_ALLREADY_EXITS','Código já existe');
@@ -411,8 +566,10 @@ DEFINE('_KUNENA_REPORT_LOGGED','Ligado');
 DEFINE('_KUNENA_GO','Ir');
 DEFINE('_KUNENA_MAILFULL','Incluir a mensagem completa no e-mail enviado aos inscritos');
 DEFINE('_KUNENA_MAILFULL_DESC','Se <strong>"Não"</strong> - inscritos receberão somente títulos das novas mensagens.');
+
 DEFINE('_KUNENA_HIDETEXT','Por favor, faça login para ver este conteúdo!');
 DEFINE('_BBCODE_HIDE','Texto escondido: [hide]algum texto a ser escondido[/hide] - Esconde o texto para visitantes');
+
 DEFINE('_KUNENA_FILEATTACH','Arquivo Anexado: ');
 DEFINE('_KUNENA_FILENAME','Nome do Arquivo: ');
 DEFINE('_KUNENA_FILESIZE','Tamanho do Arquivo: ');
@@ -423,6 +580,7 @@ DEFINE('_KUNENA_CAPDESC','Entre com o Código aqui');
 DEFINE('_KUNENA_CAPERR','Código incorreto!');
 DEFINE('_KUNENA_COM_A_REPORT', 'Notificar Mensagem');
 DEFINE('_KUNENA_COM_A_REPORT_DESC', 'Se você quer que os usuários reportem alguma mensagem altere para sim.');
+
 DEFINE('_KUNENA_REPORT_MSG', 'Mensagem Notificada');
 DEFINE('_KUNENA_REPORT_REASON', 'Razão');
 DEFINE('_KUNENA_REPORT_MESSAGE', 'Sua Mensagem');
@@ -531,6 +689,7 @@ DEFINE('_KUNENA_IN_FORUM', ' no Fórum: ');
 DEFINE('_KUNENA_FORUM_AT', ' Fórum: ');
 DEFINE('_KUNENA_QMESSAGE_NOTE', 'Nota: Apesar dos botões do BBCode e Smiley não serem mostrados ainda podem ser usados');
 
+
 // 1.0.1
 DEFINE('_KUNENA_FORUMTOOLS','Ferramentas do Fórum');
 
@@ -590,6 +749,7 @@ DEFINE('_KUNENA_ADMIN_CONFIG_USERLIST_HITS','Mostrar o número de visualizaçõe
 DEFINE('_KUNENA_ADMIN_CONFIG_USERLIST_HITS_DESC','');
 DEFINE('_KUNENA_DBWIZ', 'Assistente do Banco de Dados');
 DEFINE('_KUNENA_DBMETHOD', 'Por favor Selecione cada método que quer para completar a Instalação:');
+
 DEFINE('_KUNENA_DBCLEAN', 'Limpar a Instalação');
 DEFINE('_KUNENA_DBUPGRADE', 'atualizar do Joomlaboard');
 DEFINE('_KUNENA_TOPLEVEL', 'Nível Superior da Categoria');
@@ -597,6 +757,7 @@ DEFINE('_KUNENA_REGISTERED', 'Registrado');
 DEFINE('_KUNENA_PUBLICBACKEND', 'Backend Público');
 DEFINE('_KUNENA_SELECTANITEMTO', 'Selecione um ítem para');
 DEFINE('_KUNENA_ERRORSUBS', 'Ocorreu um erro ao excluir as mensagens e subscrições ');
+
 DEFINE('_KUNENA_WARNING', 'Aviso...');
 DEFINE('_KUNENA_CHMOD1', 'Precisa aplicar CHMOD 766 para que o aquivo seja atualizado.');
 DEFINE('_KUNENA_YOURCONFIGFILEIS', 'A sua pasta de configuração é');
@@ -651,20 +812,25 @@ DEFINE('_KUNENA_SHOW_CHILD_CATEGORY_COLON', 'Número de colunas de Sub-Fóruns')
 DEFINE('_KUNENA_SHOW_CHILD_CATEGORY_COLONDESC', 'Número de colunas dos sub-fóruns abaixo da categoria principal.');
 DEFINE('_KUNENA_SUBSCRIPTIONSCHECKED', 'Inscrição no tópico marcada por padrão?');
 DEFINE('_KUNENA_SUBSCRIPTIONSCHECKED_DESC', 'Ajuste para <strong>"Sim"</strong> se você quer que a caixa de inscrição esteja sempre marcada.');
+
 // Errors (Re-integration from Joomlaboard 1.2)
 DEFINE('_KUNENA_ERROR1', 'Category / Forum must have a name');
 // Forum Configuration (New in Kunena)
 DEFINE('_KUNENA_SHOWSTATS', 'Mostrar Estatísticas');
 DEFINE('_KUNENA_SHOWSTATSDESC', 'Se quer mostrar as Estatísticas, selecione <strong>"Sim"</strong>');
+
 DEFINE('_KUNENA_SHOWWHOIS', 'Mostrar Quem está Online');
 DEFINE('_KUNENA_SHOWWHOISDESC', 'Se quer mostrar quem está Online, selecione <strong>"Sim"</strong>');
 DEFINE('_KUNENA_STATSGENERAL', 'Mostrar Estatísticas Gerais');
 DEFINE('_KUNENA_STATSGENERALDESC', 'Se quer mostrar as Estatísticas Gerais, Selecione <strong>"Sim"</strong>');
+
 DEFINE('_KUNENA_USERSTATS', 'Mostrar Usuários Populares');
 DEFINE('_KUNENA_USERSTATSDESC', 'Se quer mostrar as estatísticas de popularidade, Selecione <strong>"Sim"</strong>');
+
 DEFINE('_KUNENA_USERNUM', 'Número de Usuários Populares');
 DEFINE('_KUNENA_USERPOPULAR', 'Mostrar Estatísticas de Tópicos Populares.');
 DEFINE('_KUNENA_USERPOPULARDESC', 'Se quer mostrar os tópicos populares, selecione <strong>"Sim"</strong>.');
+
 DEFINE('_KUNENA_NUMPOP', 'Número de Tópicos Populares');
 DEFINE('_KUNENA_INFORMATION',
 	'The Kunena team is proud to announce the release of Kunena 1.0.8. It is a powerful and stylish forum component for a well deserved content management system, Joomla!. It is initially based on the hard work of Joomlaboard and Fireboard and most of our praises goes to their team. Some of the main features of Kunena can be listed as below (in addition to JB&#39;s current features):<br /><br /><ul><li>A much more designer friendly forum system. It is close to SMF templating system having a simpler structue. With very few steps you can modify the total look of the forum. Thanks goes to the great designers in our team.</li><li>Unlimited subcategory system with better administration backend.</li><li>Faster system and better coding experience for 3rd parties.</li><li>The same<br /></li><li>Profilebox at the top of the forum</li><li>Support for popular PM systems, such as ClexusPM and Uddeim</li><li>Basic plugin system (practical rather than perfec)</li><li>Language-defined icon system.<br /></li><li>Sharing image system of other templates. So, choice between templates and image series is possible</li><li>You can add Joomla modules inside the forum template itself. Wanted to have banner inside your forum?</li><li>Favourite threads selection and management</li><li>Forum spotlights and highlights</li><li>Forum announcements and its panel</li><li>Latest messages (Tabbed)</li><li>Statistics at bottom</li><li>Who&#39;s online, on what page?</li><li>Category specific image system</li><li>Enhanced pathway</li><li>RSS, PDF output</li><li>Advanced search (under developement)</li><li>Community Builder and JomSocial profile options</li><li>Avatar management : Community Builder and JomSocial options<br /></li></ul><br />This is a collaborative work of several developers and designers that have kindly participated and made this release come true. Here we thank all of them and wish that you enjoy this release!<br /><br />Kunena! team<br /></td></tr></table>');
@@ -673,6 +839,7 @@ DEFINE('_KUNENA_FINFO', 'Informação do Fórum Kunena');
 DEFINE('_KUNENA_CSSEDITOR', 'Editor do CSS do Template do Kunena');
 DEFINE('_KUNENA_PATH', 'Caminho (Path):');
 DEFINE('_KUNENA_CSSERROR', 'Por favor note: que o arquivo do CSS do Template deve ter permissão de escrita para gravar as mudanças.');
+
 // User Management
 DEFINE('_KUNENA_FUM', 'Gerenciar Perfil de Usuário no Kunena');
 DEFINE('_KUNENA_SORTID', 'Organizar pelo ID do usuário');
@@ -684,6 +851,7 @@ DEFINE('_KUNENA_ADDMOD', 'Adicionar Moderador para');
 DEFINE('_KUNENA_NOMODSAV', 'Não existem moderadores. Leia a \'nota\' abaixo.');
 DEFINE('_KUNENA_NOTEUS',
     'NOTA: Somente os usuários que têm o nível de moderação em seu perfil no Kunena serão aqui mostrados. Para ser capaz de adicionar um moderador dê a um usuário o nível de moderador, vá a <a href="index2.php?option=com_kunena&task=profiles">Administração de usuários</a> e busque pelo usuário que você quer tornar um moderador. Depois Selecione seu perfil e atualize-o. O nível de moderador só pode ser atribuído por um administrador do site. ');
+
 DEFINE('_KUNENA_PROFFOR', 'Perfil para');
 DEFINE('_KUNENA_GENPROF', 'Opções Gerais do Perfil');
 //DEFINE('_KUNENA_PREFVIEW', 'Tipo de visualização preferida:');
@@ -697,39 +865,48 @@ DEFINE('_KUNENA_DELSIG', ' Marque esta caixa para exclur esta assinatura');
 DEFINE('_KUNENA_DELAV', ' Marque esta caixa para excluir este avatar');
 DEFINE('_KUNENA_SUBFOR', 'Subscrições para');
 DEFINE('_KUNENA_NOSUBS', 'Não foram encontradas subscrições para este usuário');
+
 // Forum Administration (Re-integration from Joomlaboard 1.2)
 DEFINE('_KUNENA_BASICS', 'Básico');
 DEFINE('_KUNENA_BASICSFORUM', 'Informações Básicas do fórum');
 DEFINE('_KUNENA_PARENT', 'Área:');
 DEFINE('_KUNENA_PARENTDESC',
     'Atenção: Para criar uma Categoria precisa determinar a Área em que deseja adicioná-la. Uma categoria serve para conter os fóruns.<br />Um Fórum <strong>somente</strong> pode ser criado numa categoria previamente criada. <br />Mensagens <strong>NÃO</strong> podem ser publicadas em Categorias; somente em Fóruns.');
+
 DEFINE('_KUNENA_BASICSFORUMINFO', 'Nome do Fórum e Descrição');
 DEFINE('_KUNENA_NAMEADD', 'Nome:');
 DEFINE('_KUNENA_DESCRIPTIONADD', 'Descrição:');
 DEFINE('_KUNENA_ADVANCEDDESC', 'Configurações Avançadas do Fórum');
 DEFINE('_KUNENA_ADVANCEDDESCINFO', 'Segurança e Acesso do Fórum');
 DEFINE('_KUNENA_LOCKEDDESC', 'Configurar para <strong>"Sim"</strong> se quiser bloquear este fórum. Ninguém, exceto Moderadores e Administradores, podem criar novos tópicos e/ou responder um fórum bloqueado (ou mover mensagens).');
+
 DEFINE('_KUNENA_LOCKED1', 'Bloqueado:');
 DEFINE('_KUNENA_PUBACC', 'Nível de Acesso Público:');
 DEFINE('_KUNENA_PUBACCDESC',
     'Para criar um fórum privado deve especificar o nível mínimo de acesso que pode visualizar/entrar no fórum aqui. Por padrão o nível de acesso minimo é "Todos".<br /><br /><b>NOTA</b>:Se restringir o acesso numa Categoria inteira para um ou mais grupos, ele esconderá todos os Fóruns que ela contém a qualquer pessoa que não tennha os privilégios apropriados na Categoria <b>mesmo</b> se um ou mais destes Fóruns têm um nível de acesso mais baixo configurado! Isto também se aplica a Moderadores; você terá que acrescentar um Moderador à lista de moderadores da Categoria se ele(s) não tiver o nível de grupo apropriado para ver a Categoria.<br /> Isto é independente do facto de que Categorias não podem ser moderadas; Ainda assim moderadores podem ser acrescentados à lista de moderadores.');
+
 DEFINE('_KUNENA_CGROUPS', 'Incluir Sub-Grupos:');
 DEFINE('_KUNENA_CGROUPSDESC', 'Os Sub-Grupos tembém devem ter permissão de acesso? Se configurar para "Não" o acesso a este fórum será restrito <b>somente</b> ao grupo selecionado');
+
 DEFINE('_KUNENA_ADMINLEVEL', 'Nível de Acesso da Administração:');
 DEFINE('_KUNENA_ADMINLEVELDESC',
     'Se você criar um fórum com restrições ao Acesso Público, pode especificar aqui um Nível de Acesso de Administração adicional.<br /> Se você restringir o acesso ao fórum para um grupo especial de usuários do Frontend e não especificar um Grupo de Backend Público aqui, os administradores não serão capazes de entrar e ver o Fórum.');
+
 DEFINE('_KUNENA_ADVANCED', 'Avançado');
 DEFINE('_KUNENA_CGROUPS1', 'Incluir Sub-Grupos:');
 DEFINE('_KUNENA_CGROUPS1DESC', 'Os Sub-Grupos também devem ter permissão de acesso? Se configurar para "Não" o acesso a este fórum será restrito <b>somente</b> ao grupo selecionado');
+
 DEFINE('_KUNENA_REV', 'Revisar mensagens:');
 DEFINE('_KUNENA_REVDESC',
     'Selecione <strong>"Sim"</strong> se você quer que as mensagens sejam revisadas pelos Moderadores antes de serem publicadas neste fórum. Isto só é útil num fórum Moderado!!<br />Se configurar isto sem qualquer Moderador especificado, o Admin do Site é o único responsável por aprovar/excluir as mensagens inseridas que serão mantidos em \'espera\'!');
+
 DEFINE('_KUNENA_MOD_NEW', 'Moderação');
 DEFINE('_KUNENA_MODNEWDESC', 'Moderação e Moderadores do fórum');
 DEFINE('_KUNENA_MOD', 'Moderado:');
 DEFINE('_KUNENA_MODDESC',
     'Selecione <strong>"Sim"</strong> se quiser poder nomear Moderadores para este fórum.<br /><strong>Nota:</strong> Isto não significa que novas mensagens devem ser revisadas antes da publicação no fórum!
 Você precisará selecionar a opção de Revisão para isso no menú Avançado.<br /><br /> <strong>NOTA:</strong> Depois de ajustar Moderação para <strong>"Sim"</strong> tem que gravar a configuração do fórum em primeiro lugar antes de poder adicionar Moderadores.');
+
 DEFINE('_KUNENA_MODHEADER', 'Configurações da Moderação para este fórum');
 DEFINE('_KUNENA_MODSASSIGNED', 'Moderadores atribuídos a este fórum:');
 DEFINE('_KUNENA_NOMODS', 'Não existem Moderadores para este fórum');
@@ -765,6 +942,7 @@ DEFINE('_COM_A_BASIC_SETTINGS', 'Configurações Básicas');
 //
 DEFINE('_COM_A_FAVORITES', 'Permitir Favoritos');
 DEFINE('_COM_A_FAVORITES_DESC', 'Selecione <strong>"Sim"</strong> se quiser que os usuários registados adicionem tópicos aos favoritos.');
+
 DEFINE('_USER_UNFAVORITE_ALL', 'Marque esta caixa para <b><u> Remover Favoritos </u></b> de todos os tópicos.');
 DEFINE('_VIEW_FAVORITETXT', 'Adicionar este tópico como favorito ');
 DEFINE('_USER_UNFAVORITE_YES', 'Retirar este tópico dos favoritos');
@@ -779,8 +957,10 @@ DEFINE('_KUNENA_USE_JOOMLA_STYLE', 'Usar estilos do Joomla?');
 DEFINE('_KUNENA_USE_JOOMLA_STYLE_DESC', 'Se quiser usar o estilo do Joomla Selecione <strong>"Sim"</strong>. (class: como sectionheader, sectionentry1 ...);');
 DEFINE('_KUNENA_SHOW_CHILD_CATEGORY_ON_LIST', 'Mostrar Imagem de Sub-Categorias');
 DEFINE('_KUNENA_SHOW_CHILD_CATEGORY_ON_LIST_DESC', 'Se quiser mostrar um pequeno ícone da sub-categoria na sua lista do fórum, Selecione <strong>"Sim"</strong>. ');
+
 DEFINE('_KUNENA_SHOW_ANNOUNCEMENT', 'Mostrar Anúncio');
 DEFINE('_KUNENA_SHOW_ANNOUNCEMENT_DESC', 'Selecione <strong>"Sim"</strong>, se quiser mostrar a caixa de anúncio na página do fórum.');
+
 DEFINE('_KUNENA_SHOW_AVATAR_ON_CAT', 'Mostrar Avatar na lista Categorias?');
 DEFINE('_KUNENA_SHOW_AVATAR_ON_CAT_DESC', 'Selecione <strong>"Sim"</strong>, se quiser mostrar o avatar na lista de categoria de fórum.');
 DEFINE('_KUNENA_RECENT_POSTS', 'Configurações de Mensagens Recentes');
@@ -809,6 +989,7 @@ DEFINE('_KUNENA_CATIMAGEPATH', 'Caminho das Imagens da Categoria');
 DEFINE('_KUNENA_CATIMAGEPATH_DESC', 'Caminho das Imagens das Categorias. Se selecionar o caminho "category_images/" o caminho será o seguinte "components/com_kunena/category_images/".');
 DEFINE('_KUNENA_ANN_MODID', 'IDs do Moderadores de Anúncio');
 DEFINE('_KUNENA_ANN_MODID_DESC', 'Adiciona os IDs dos moderadores de anúncio. Exemplo: 62,63,73 . Os Moderadores de anúncio podem adicionar, editar e exluir os anúncios.');
+
 //
 DEFINE('_KUNENA_FORUM_TOP', 'Fórum');
 DEFINE('_KUNENA_CHILD_BOARDS', 'Sub-Fórum ');
@@ -952,6 +1133,7 @@ DEFINE('_COM_A_PMS_TITLE','Componente de mensagens privadas');
 DEFINE('_COM_A_COMBUILDER_TITLE','Community Builder');
 DEFINE('_FORUM_SEARCH','Pesquisado por: %s');
 DEFINE('_MODERATION_DELETE_MESSAGE','Você tem a certeza que deseja excluir esta mensagem? \n\n NOTA: Não há nenhuma maneira de recuperar mensagens excluídas!');
+
 DEFINE('_MODERATION_DELETE_SUCCESS','As Mensagens foram excluídas');
 DEFINE('_COM_A_RANKING','Classificação');
 DEFINE('_COM_A_BOT_REFERENCE','Mostrar o bot do Gráfico de referência');
@@ -962,6 +1144,7 @@ DEFINE('_COM_A_MOSBOT_DESC',
  'O bot de discussão habilita usuários a discutir o itens de conteúdo nos fóruns. O título de conteúdo é usado como assunto do tópico.'
 .'<br />Se um tópico ainda não existe, será criado. Se um tópico já existe, o usuário é levado ao tópico e ele poderá responder.'
 .'<br /><strong>Você precisará baixar e instalar o Bot separadamente.</strong>'
+
 .'<br />Veja o site <a href="http://www.bestofjoomla.com">Best of Joomla</a> para mais informações.'
 .'<br />Quando instalar, precisará adicionar as seguintes linhas ao seu conteúdo:'
 .'<br />{mos_kunena_discuss:<em>catid</em>}'
@@ -969,6 +1152,9 @@ DEFINE('_COM_A_MOSBOT_DESC',
 .'e veja o id da categoria de suas URLs na sua barra de status do browser.'
 .'<br />Exemplo: se quiser que um artigo seja discutido na categoria de id 26, o bot deve se parecer com: {mos_kunena_discuss:26}'
 .'<br />Pode parecer difícil, mas permite que cada ítem de conteúdo seja discutido no devido fórum.' );
+
+
+
 //new in 1.1.4 stable
 // search.class.php
 DEFINE('_FORUM_SEARCHTITLE','Procurar');
@@ -993,20 +1179,25 @@ DEFINE('_POST_MOVE_GHOST','Deixar uma cópia da mensagem neste fórum');
 DEFINE('_GEN_FORUM_JUMP','Ir para o Fórum');
 DEFINE('_COM_A_FORUM_JUMP','Ativar "Ir para o Fórum"');
 DEFINE('_COM_A_FORUM_JUMP_DESC','Se configurar para <strong>"Sim"</strong> um seletor será mostrado nas páginas do fórum permitindo a troca rápida entre um fórum ou outra categoria.');
+
 //new in 1.1 RC1
 DEFINE('_GEN_RULES','Regras');
 DEFINE('_COM_A_RULESPAGE','Ativar Página de Regras');
 DEFINE('_COM_A_RULESPAGE_DESC',
 'Se configurar para <strong>"Sim"</strong> um link no cabeçalho do Menu irá aparecer para a página de Regras. Esta página pode ser usada para coisas como Regras de utilização do fórum etc. Você pode alterar os conteúdos desta pasta como você quiser. Para isto basta abrir e editar a pasta rules.php em /joomla_root/components/com_kunena. <em>Certifique-se de ter sempre um backup desta pasta, pois ela será sobreescrita ao atualizar o fórum!</em>');
+
 DEFINE('_MOVED_TOPIC','MOVIDO:');
 DEFINE('_COM_A_PDF','Ativar Criação de PDF');
 DEFINE('_COM_A_PDF_DESC',
 'Configurar para  <strong>"Sim"</strong> se você quiser ativar usuários para baixar um simples documento de PDF dos conteúdos de um tópico.<br />É um <u>simples</u> Documento PDF; sem formatação, sem enfeites e tal mas contém todo o texto do tópico.');
 DEFINE('_GEN_PDFA','Clique neste botão para criar um documento de PDF para este tópico (abre uma nova janela).');
+
+
 DEFINE('_GEN_PDF', 'PDF');
 //new in 1.0.4 stable
 DEFINE('_VIEW_PROFILE','Clique aqui para ver o perfil deste usuário');
 DEFINE('_VIEW_ADDBUDDY','Clique aqui para adicionar este usuário à sua lista de amigos');
+
 DEFINE('_POST_SUCCESS_POSTED', 'Sua mensagem foi enviada com sucesso');
 DEFINE('_POST_SUCCESS_VIEW','[ Voltar à mensagem ]');
 DEFINE('_POST_SUCCESS_FORUM','[ Voltar ao fórum ]');
@@ -1017,11 +1208,15 @@ DEFINE('_COM_A_BADWORDS_TITLE','Filtrar palavrões');
 DEFINE('_COM_A_BADWORDS','Usar filtro de palavrões');
 DEFINE('_COM_A_BADWORDS_DESC','Configurar <strong>"Sim"</strong> se quiser filtrar das mensagens os palavrões que serão definidos nas configurações do Componente Badword. Para poder usar isto, terá que ter o Componente Badword instalado!');
 DEFINE('_COM_A_BADWORDS_NOTICE','* Esta Mensagem foi censurada devido ao fato de conter uma ou mais palavras censuradas pelo fórum *');
+
+
 DEFINE('_COM_A_AVATAR_SRC', 'Usar imagem do avatar');
 DEFINE('_COM_A_AVATAR_SRC_DESC',
 	'Se você tiver os componente JomSocial, Clexus PM ou Community Builder instalados, pode configurar o Kunena para utilizar a imagem de avatar do perfil de usuário do JomSocial, Clexus PM ou Community Builder. NOTA: Para o Community Builder você precisa ter a opção thumbnail habilitada porque o fórum usuário utiliza imagens miniatura em vez de originais.');
+
 DEFINE('_COM_A_KARMA','Mostrar indicador de Popularidade');
 DEFINE('_COM_A_KARMA_DESC','Configurar para <strong>"Sim"</strong> para mostrar a Popularidade do usuário e botões relacionados a (aumentar / diminuir) se as Estatísticas estiverem Ativadas.');
+
 DEFINE('_COM_A_DISEMOTICONS','Desativar emoticons');
 DEFINE('_COM_A_DISEMOTICONS_DESC','Configurar para <strong>"Sim"</strong> para desativar totalmente os gráficos de  emoticons (smileys).');
 DEFINE('_COM_C_FBCONFIG','Configuração do<br/>Kunena');
@@ -1030,6 +1225,7 @@ DEFINE('_COM_C_FORUM','Administração do Fórum');
 DEFINE('_COM_C_FORUMDESC','Adicionar categorias/fóruns e configurá-los');
 DEFINE('_COM_C_USER','Administração de Usuários');
 DEFINE('_COM_C_USERDESC','Configurações Básicas de usuários e administração de perfis de usuários');
+
 DEFINE('_COM_C_FILES','Arquivos Enviados');
 DEFINE('_COM_C_FILESDESC','Visualizar e administrar arquivos enviados');
 DEFINE('_COM_C_IMAGES','Imagens Enviadas');
@@ -1046,6 +1242,7 @@ DEFINE('_COM_C_LOADMODPOS', 'Carregar Posição de Módulos');
 DEFINE('_COM_C_LOADMODPOSDESC', 'Load Module Positions for Kunena Template');
 DEFINE('_COM_C_UPGRADEDESC','Atualizar sua base de dados para a última versão após um upgrade');
 DEFINE('_COM_C_BACK','Voltar ao Painel de Controle do Kunena');
+
 DEFINE('_POST_SUCCESS_REQUEST2','Seu pedido foi processado');
 DEFINE('_POST_NO_PUBACCESS3','Clique aqui para registrar.');
 //==================================================================================================
@@ -1068,6 +1265,8 @@ DEFINE('_KARMA_SELF_DECREASE','Por favor não tentar reduzir sua própria popula
 DEFINE('_KARMA_SELF_INCREASE','A sua popularidade foi reduzida por tentar aumentá-la!');
 DEFINE('_KARMA_DECREASED','Popularidade do usuário diminuída. Se você não for levado de volta para o tópico em alguns momentos,');
 DEFINE('_KARMA_INCREASED','Popularidade do usuário aumentada. Se você não for levado de volta para o tópico em alguns momentos,');
+
+
 DEFINE('_COM_A_TEMPLATE','Template');
 DEFINE('_COM_A_TEMPLATE_DESC','Escolha o template a ser usado.');
 DEFINE('_COM_A_TEMPLATE_IMAGE_PATH','Configurações de imagens');
@@ -1077,10 +1276,13 @@ DEFINE('_PREVIEW_CLOSE','Fechar esta janela');
 //new in 1.0 Stable
 DEFINE('_COM_A_POSTSTATSBAR','Usar Barra de Estatísticas de mensagem');
 DEFINE('_COM_A_POSTSTATSBAR_DESC','Configure para <strong>"Sim"</strong> se quiser que o n. de Mensagens de um usuário seja colocado numa barra de estatísticas.');
+
 DEFINE('_COM_A_POSTSTATSCOLOR','N. da cor para a Barra de Estatísticas');
 DEFINE('_COM_A_POSTSTATSCOLOR_DESC','Dê o n. da cor que quer usar para a barra de Estatísticas de mensagem.');
+
 DEFINE('_LATEST_REDIRECT',
 	'o Kunena precisa (re)estabelecer seus privilégios de acesso antes que possa criar uma lista das últimas mensagens.\nNão se preocupe, é normal depois de 30 minutos de inatividade ou depois de você se logar novamente.\nPor favor enviar a sua procura de novo.');
+
 DEFINE('_SMILE_COLOUR','Cores');
 DEFINE('_SMILE_SIZE','Tamanho');
 DEFINE('_COLOUR_DEFAULT','Padrão');
@@ -1103,11 +1305,14 @@ DEFINE('_IMAGE_SELECT_FILE','Selecione um arquivo de imagem para anexar');
 DEFINE('_FILE_SELECT_FILE','Selecione uma arquivo para anexar');
 DEFINE('_FILE_NOT_UPLOADED','Seu arquivo não foi enviado. Por favor tente publicar novamente ou editar a mensagem');
 DEFINE('_IMAGE_NOT_UPLOADED','Sua imagem não foi enviada. Por favor tente publicar novamente ou editar a mensagem');
+
+
 DEFINE('_BBCODE_IMGPH','Inserir [img] na mensagem para a imagem em anexo');
 DEFINE('_BBCODE_FILEPH','Inserir [file] na mensagem para o arquivo em anexo');
 DEFINE('_POST_ATTACH_IMAGE','[img]');
 DEFINE('_POST_ATTACH_FILE','[file]');
 DEFINE('_USER_UNSUBSCRIBE_ALL','Marque esta caixa para <b><u>remover inscreção</u></b> para todos os tópicos (inclusive os invisíveis para fins de procura de erros)');
+
 DEFINE('_LINK_JS_REMOVED','<em>O link ativo contendo JavaScript foi removido automaticamente</em>');
 //==========================================
 //new in 1.0 RC4
@@ -1121,8 +1326,10 @@ DEFINE('_LATEST_THREADFORUM','Tópico/Fórum');
 DEFINE('_LATEST_NUMBER','Novas Mensagens');
 DEFINE('_COM_A_SHOWNEW','Mostrar novas mensagens');
 DEFINE('_COM_A_SHOWNEW_DESC','Se configurar para <strong>"Sim"</strong> Kunena mostrará ao usuário um indicador dos fóruns que contém novas mensagens e quais as mensagens que são novas desde a sua última visita.');
+
 DEFINE('_COM_A_NEWCHAR','"Indicador" de novas');
 DEFINE('_COM_A_NEWCHAR_DESC','Defina aqui o que deve ser usado para indicar novas mensagens (como um "!" ou "Novo!")');
+
 DEFINE('_LATEST_AUTHOR','Últimas mensagens do Autor');
 DEFINE('_GEN_FORUM_NEWPOST','Novas Mensagens');
 DEFINE('_GEN_FORUM_NOTNEW','Sem Novas Mensagens');
@@ -1139,6 +1346,12 @@ DEFINE('_IMAGE_ERROR_EMPTY','Por favor selecionar um arquivo antes de enviar.');
 DEFINE('_IMAGE_ERROR_SIZE','A imagem excede o tamanho máximo permitido pela Administração.');
 DEFINE('_IMAGE_ERROR_WIDTH','A imagem excede a largura máxima permitida pela Administração.');
 DEFINE('_IMAGE_ERROR_HEIGHT','A imagem excede a altura máxima permitida pela Administração.');
+
+
+
+
+
+
 DEFINE('_IMAGE_UPLOADED','A sua imagem foi enviada.');
 DEFINE('_COM_A_IMAGE','Imagens');
 DEFINE('_COM_A_IMGHEIGHT','Altura máxima da imagem');
@@ -1146,14 +1359,19 @@ DEFINE('_COM_A_IMGWIDTH','Largura máxima da imagem');
 DEFINE('_COM_A_IMGSIZE','Tamanho máximo do arquivo de imagem <em>em Kilobytes</em>');
 DEFINE('_COM_A_IMAGEUPLOAD','Permitir o envio público de imagens');
 DEFINE('_COM_A_IMAGEUPLOAD_DESC','Configure para <strong>"Sim"</strong> se quiser que todo mundo (público) seja capaz de enviar uma imagem.');
+
 DEFINE('_COM_A_IMAGEREGUPLOAD','Permitir envio registrado de imagens.');
 DEFINE('_COM_A_IMAGEREGUPLOAD_DESC','Configure para <strong>"Sim"</strong> se quiser que usuários registrados e logados possam enviar uma imagem.<br/> Nota: (Super)administradores e moderadores serão sempre capazas de enviar imagens.');
+
 //New since preRC4-II:
 DEFINE('_COM_A_UPLOADS', 'Uploads');
 DEFINE('_FILE_TYPES','Seu arquivo pode ser do tipo - tamanho máx.');
+
 DEFINE('_FILE_ERROR_TYPE','Você só pode enviar arquivos do tipo de:\n');
 DEFINE('_FILE_ERROR_EMPTY','Por favor selecionar um arquivo antes de enviar.');
 DEFINE('_FILE_ERROR_SIZE','O tamanho do arquivo excede o máx. configurado pelo Administrador.');
+
+
 DEFINE('_COM_A_FILE','Arquivos');
 DEFINE('_COM_A_FILEALLOWEDTYPES','Tipos de arquivos permitidos');
 DEFINE('_COM_A_FILEALLOWEDTYPES_DESC','Especifique aqui quais os tipos de arquivos são permitidos enviar. Use vírgula para separar as extensões e letras <strong>minúsculas</strong>, sem espaços.<br />Exemplo: zip,txt,exe,htm,html');
@@ -1162,17 +1380,26 @@ DEFINE('_COM_A_FILEUPLOAD','Permitir o envio de arquivos para usuários não reg
 DEFINE('_COM_A_FILEUPLOAD_DESC','Configure para <strong>"Sim"</strong> se quiser que todo mundo (público) seja capaz de enviar um arquivo.');
 DEFINE('_COM_A_FILEREGUPLOAD','Permitir envio de arquivos para usuários registrados.');
 DEFINE('_COM_A_FILEREGUPLOAD_DESC','Configure para <strong>"Sim"</strong> se quiser que usuários registrados e logados sejam capazes de enviar uma pasta.<br/> Nota: (Super)administradores e moderadores serão sempre capazes de enviar aruivos.');
+
+
+
+
 DEFINE('_SUBMIT_CANCEL','O envio da sua mensagem foi cancelado');
 DEFINE('_HELP_SUBMIT','Clique aqui para enviar a sua mensagem');
 DEFINE('_HELP_PREVIEW','Clique aqui para ver como a sua mensagem será visualizada ao enviá-la.');
 DEFINE('_HELP_CANCEL','Clique aqui para cancelar a sua mensagem.');
 DEFINE('_POST_DELETE_ATT','Se esta caixa de mensagem estiver checada, todas as imagens e arquivos anexos à mensagem também serão excluídos (recomendado).');
+
+
+
 //new since preRC4-III
 DEFINE('_COM_A_USER_MARKUP','Mostrar marca de edição');
 DEFINE('_COM_A_USER_MARKUP_DESC','Configure para <strong>"Sim"</strong> se quiser que uma mensagem editada seja marcada com um texto mostrando que a mensagem foi editada por um usuário e quando ela foi editada.');
+
 DEFINE('_EDIT_BY','Mensagem editada por:');
 DEFINE('_EDIT_AT','em:');
 DEFINE('_UPLOAD_ERROR_GENERAL','Um erro ocorreu ao enviar o seu avatar. Por favor tente novamente ou notifique o administrador do fórum.');
+
 DEFINE('_COM_A_IMGB_IMG_BROWSE','Gerenciador de imagens enviadas ');
 DEFINE('_COM_A_IMGB_FILE_BROWSE','Gerenciador de arquivos enviados');
 DEFINE('_COM_A_IMGB_TOTAL_IMG','N. de imagens enviadas');
@@ -1181,6 +1408,7 @@ DEFINE('_COM_A_IMGB_ENLARGE','Clique na imagem para vê-la no tamanho máximo');
 DEFINE('_COM_A_IMGB_DOWNLOAD','Clique na imagem do arquivo para baixá-lo.');
 DEFINE('_COM_A_IMGB_DUMMY_DESC',
 	'Esta opção "Substituir por fictícia" irá substituir a imagem selecionada por uma imagem fictícia.<br /> Isto permitirá remover o arquivo atual sem quebrar a mensagem.<br /><small><em>Por favor note que será preciso atualizar a página do seu navegador para ver a imagem fictícia.</em></small>');
+
 DEFINE('_COM_A_IMGB_DUMMY','Imagem fictícia atual');
 DEFINE('_COM_A_IMGB_REPLACE','Substituir com a imagem fictícia');
 DEFINE('_COM_A_IMGB_REMOVE','Remover inteiramente');
@@ -1188,9 +1416,11 @@ DEFINE('_COM_A_IMGB_NAME','Nome');
 DEFINE('_COM_A_IMGB_SIZE','Tamanho');
 DEFINE('_COM_A_IMGB_DIMS','Dimensões');
 DEFINE('_COM_A_IMGB_CONFIRM','Tem certeza que deseja excluir este arquivo?\n Excluir um arquivo trará problemas de visualização à mensagem que faz referência a ele...');
+
 DEFINE('_COM_A_IMGB_VIEW','Abrir Mensagem (para editar)');
 DEFINE('_COM_A_IMGB_NO_POST','Nenhuma Mensagem referente!');
 DEFINE('_USER_CHANGE_VIEW','As mudanças nestas configurações serão ativadas na próxima vez que visitar o fórum.');
+
 DEFINE('_MOSBOT_DISCUSS_A','Discuta este artigo no fórum. (');
 DEFINE('_MOSBOT_DISCUSS_B',' Mensagens)');
 DEFINE('_POST_DISCUSS','Este tópico discute o conteúdo do artigo');
@@ -1198,6 +1428,7 @@ DEFINE('_COM_A_RSS','Ativar Feed RSS');
 DEFINE('_COM_A_RSS_DESC','O Feed RSS permite aos usuários baixar as últimas mensagens no programa Leitor de RSS em seu desktop (veja <a href="http://www.rssreader.com" target="_blank">rssreader.com</a> para exemplo.');
 DEFINE('_LISTCAT_RSS','ver as últimas mensagens diretamente no seu desktop');
 DEFINE('_SEARCH_REDIRECT','O Kunena precisa de (re)estabelecer os seus privilégios antes de realizar uma busca.\nNão se preocupe, isto é normal depois de 30 minutos de inatividade.\nPor favor envie o seu pedido de busca novamente.');
+
 //====================
 //admin.forum.html.php
 DEFINE('_COM_A_CONFIG','Configuração');
@@ -1213,39 +1444,55 @@ DEFINE('_COM_A_THREADS','Tópicos por página');
 DEFINE('_COM_A_THREADS_DESC','N. de tópicos por página a exibir.');
 DEFINE('_COM_A_REGISTERED_ONLY','Somente usuários registrados');
 DEFINE('_COM_A_REG_ONLY_DESC','Configure para <strong>"Sim"</strong> para permitir que somente os usuários registrados possam utilizar o fórum (ver & publicar), Configure para "Não" para que qualquer usuário possa utilizar o fórum.');
+
 DEFINE('_COM_A_PUBWRITE','Ler/Gravar Público');
 DEFINE('_COM_A_PUBWRITE_DESC','Configure para <strong>"Sim"</strong> para permitir privilégios de gravação públicos. Configure para "Não" para que qualquer usuário possa ver o fórum, mas somente usuários registrados possam publicar Mensagens.');
+
 DEFINE('_COM_A_USER_EDIT','Edições de usuários.');
 DEFINE('_COM_A_USER_EDIT_DESC','Configurar para <strong>"Sim"</strong> para permitir a usuários registrados editarem as suas próprias Mensagens.');
 DEFINE('_COM_A_MESSAGE','Para gravar as valvar as mudanças, pressione o botão "Salvar" no topo.');
+
+
 DEFINE('_COM_A_HISTORY','Mostrar Histórico');
 DEFINE('_COM_A_HISTORY_DESC','Configurar para "sim" se quiser que um histórico do tópico seja exibido quando uma resposta/citação for feita');
+
 DEFINE('_COM_A_SUBSCRIPTIONS','Permitir Inscrições');
 DEFINE('_COM_A_SUBSCRIPTIONS_DESC','Configurar para <strong>"Sim"</strong> se quiser que usuários registrados possam inscrever-se nos tópicos para receber uma notificação quando uma resposta for feita.');
+
 DEFINE('_COM_A_HISTLIM','Limite do Histórico');
 DEFINE('_COM_A_HISTLIM_DESC','N. de Mensagens a exibir no histórico.');
 DEFINE('_COM_A_FLOOD','Proteção de Flood');
 DEFINE('_COM_A_FLOOD_DESC','Tempo em segundos que um usuário tem que esperar para publicar duas mensagens consecutivas. Configure para 0(zero) para desligar protecção de Flood. NOTA: Proteção de Flood<em>pode</em> causar problemas de performance...');
+
 DEFINE('_COM_A_MODERATION','e-mail de moderadores');
 DEFINE('_COM_A_MODERATION_DESC',
 	'Configurar para <strong>"Sim"</strong> se quiser que notificações de e-mail de novas mensagens sejam enviadas para o(s) moderador(es) do fórum. Nota: embora o (super)administrador tenha todos os privilégios de Moderador designe-o explicitamente como moderador para que ele também receba os e-mails!');
+
+
 DEFINE('_COM_A_SHOWMAIL','Mostrar e-mail');
 DEFINE('_COM_A_SHOWMAIL_DESC','Configurar para "Não" se quiser que nunca seja visualizado o e-mail de usuários; nem mesmo dos registrados.');
+
 DEFINE('_COM_A_AVATAR','Permitir avatares');
 DEFINE('_COM_A_AVATAR_DESC','Configurar para <strong>"Sim"</strong> se quiser que usuários registrados tenham um avatar (administrado através de seu perfil).');
+
 DEFINE('_COM_A_AVHEIGHT','Altura máx. do avatar');
 DEFINE('_COM_A_AVWIDTH','Largura máx. do avatar');
 DEFINE('_COM_A_AVSIZE','Tamanho máx. do avatar <br/><em>em Kilobytes</em>');
 DEFINE('_COM_A_USERSTATS','Mostrar estatísticas do usuário');
 DEFINE('_COM_A_USERSTATS_DESC','Configurar para <strong>"Sim"</strong> se quiser mostrar estatísticas de usuários como n. de mensagens feitas por usuário, tipo de usuário (Admin, Moderador, usuário, etc.).');
+
 DEFINE('_COM_A_AVATARUPLOAD','Permitir envio de Avatar');
 DEFINE('_COM_A_AVATARUPLOAD_DESC','Configurar para <strong>"Sim"</strong> se quiser que usuários registrados sejam capazes de enviar seus avatares.');
+
 DEFINE('_COM_A_AVATARGALLERY','Usar galeria de Avatares');
 DEFINE('_COM_A_AVATARGALLERY_DESC','Configurar para <strong>"Sim"</strong> se quiser que os usuários registrados sejam capazes de usar um avatar de uma galeria que você fornecer (components/com_kunena/avatars/gallery).');
 DEFINE('_COM_A_RANKING_DESC','Configure para <strong>"Sim"</strong> se quiser mostrar o ranking dos usuários registrados baseados no n. de mensagens que ele enviou. <br/><strong>Note que você deve ativar Estatísticas de Usuários na aba Avançada.</strong>');
+
 DEFINE('_COM_A_RANKINGIMAGES','Usar imagens de Rank');
 DEFINE('_COM_A_RANKINGIMAGES_DESC',
 	'Configure para <strong>"Sim"</strong> se quiser mostrar o ranking dos usuários registrados com uma imagem (de components/com_kunena/ranks). Desligando esta opção irá mostrar o texto para aquele rank. Confira a documentação em www.bestofjoomla.com para mais informações sobre imagens de ranking.');
+
+
 //e-mail and stuff
 $_COM_A_NOTIFICATION="Nova notificação de mensagem de ";
 $_COM_A_NOTIFICATION1="Uma nova mensagem foi enviada no tópico em que se inscreveu no ";
@@ -1253,6 +1500,11 @@ $_COM_A_NOTIFICATION2="Você pode administrar suas inscrições no link 'Meu Per
 $_COM_A_NOTIFICATION3="Não responda a esta notificação de e-mail porque é um e-mail gerado automticamente.";
 $_COM_A_NOT_MOD1="Uma nova mensagem foi enviada no fórum em que foi designado como moderador em ";
 $_COM_A_NOT_MOD2="Por favor observe depois de fazer o login no site.";
+
+
+
+
+
 DEFINE('_COM_A_NO','Não');
 DEFINE('_COM_A_YES','Sim');
 DEFINE('_COM_A_FLAT','Corrido');
@@ -1262,21 +1514,26 @@ DEFINE('_COM_A_MESSAGES_DESC','N. de mensagens por página a exibir.');
 //admin; changes from 0.9 to 0.9.1
 DEFINE('_COM_A_USERNAME','Nome de Usuário');
 DEFINE('_COM_A_USERNAME_DESC','Configurar para <strong>"Sim"</strong> se quiser que o nome de usuário (como no login) seja usado em vez do nome real do usuário');
+
 DEFINE('_COM_A_CHANGENAME','Permitir mudança de nome');
 DEFINE('_COM_A_CHANGENAME_DESC','Configurar para <strong>"Sim"</strong> se quiser que usuários registrados sejam capazes de mudar o nome ao publicar. Se configurado para "Não" então os usuários registrados não serão capazes de editar os seus nomes. ');
+
 //admin; changes 0.9.1 to 0.9.2
 DEFINE('_COM_A_BOARD_OFFLINE','Fórum Offline');
 DEFINE('_COM_A_BOARD_OFFLINE_DESC','Configurar para <strong>"Sim"</strong> se quiser colocar a seção do Fórum offline. O fórum permanecerá navegável para super administradores.');
+
 DEFINE('_COM_A_BOARD_OFFLINE_MES','Mensagem do Fórum Offline');
 DEFINE('_COM_A_PRUNE','Limpar Mensagens do fórum');
 DEFINE('_COM_A_PRUNE_NAME','Fórum para limpar:');
 DEFINE('_COM_A_PRUNE_DESC',
 	'As funções de Limpeza de Fórum permitem limpar tópicos que não tenham nenhuma mensagem após determinado período de dias. Isto não remove tópicos que estejam colocados como fixos ou que estejam fechados; estes tópicos devem ser removidos manualmente. Tópicos em fóruns fechados não podem ser excluídos.');
+
 DEFINE('_COM_A_PRUNE_NOPOSTS','Limpar tópicos sem mensagens nos últimos ');
 DEFINE('_COM_A_PRUNE_DAYS','dias');
 DEFINE('_COM_A_PRUNE_USERS','Limpar usuários'); // <=FB 1.0.3
 DEFINE('_COM_A_PRUNE_USERS_DESC',
 	'Esta função permite que você limpe sua lista de usuários do Kunena contra a lista de usuários do Joomla! Isto irá remover todos os perfis de usuários do Kunena que foram recluídos do Framework do Joomla. <br/>Quando tiver certeza que deseja continuar, clique "Iniciar Limpeza" na barra de menu acima.');
+
 //general
 DEFINE('_GEN_atiON','Ação');
 DEFINE('_GEN_AUTHOR','Autor');
@@ -1302,6 +1559,7 @@ DEFINE('_GEN_LOCKED_FORUM','O Fórum está fechado');
 DEFINE('_GEN_LOCKED_TOPIC','O Tópico está fechado');
 DEFINE('_GEN_MESSAGE','Mensagem');
 DEFINE('_GEN_MODERATED','Este fórum é moderado; É necessário revisar antes da publicação.');
+
 DEFINE('_GEN_MODERATORS','Moderadores');
 DEFINE('_GEN_MOVE','Mover');
 DEFINE('_GEN_NAME','Nome');
@@ -1328,6 +1586,7 @@ $_GEN_FLAT_VIEW="Visualização Corrida";
 //avatar_upload.php
 DEFINE('_UPLOAD_UPLOAD','Enviar');
 DEFINE('_UPLOAD_DIMENSIONS','Seu arquivo de imagem pode ter no máximo (largura x altura - tamanho)');
+
 DEFINE('_UPLOAD_SUBMIT','Enviar um novo Avatar');
 DEFINE('_UPLOAD_SELECT_FILE','Selecionar arquivo');
 DEFINE('_UPLOAD_ERROR_TYPE','Por favor use somente imagens jpeg, gif ou png.');
@@ -1336,12 +1595,17 @@ DEFINE('_UPLOAD_ERROR_NAME','esta pasta de imagem deve conter somente caracteres
 DEFINE('_UPLOAD_ERROR_SIZE','A imagem excede o tamanho máximo permitido pela Administração.');
 DEFINE('_UPLOAD_ERROR_WIDTH','A imagem excede a largura máxima permitida pela Administração.');
 DEFINE('_UPLOAD_ERROR_HEIGHT','A imagem excede a altura máxima permitida pela Administração.');
+
+
+
+
 DEFINE('_UPLOAD_ERROR_CHOOSE',"Você não escolheu um avatar da galeria...");
 DEFINE('_UPLOAD_UPLOADED','O seu avatar foi enviado.');
 DEFINE('_UPLOAD_GALLERY','Escolha um avatar da galeria de Avatares:');
 DEFINE('_UPLOAD_CHOOSE','Confirmar escolha.');
 // listcat.php
 DEFINE('_LISTCAT_ADMIN','Um administrador deve criá-las primeiro do ');
+
 DEFINE('_LISTCAT_DO','Eles saberão o que fazer ');
 DEFINE('_LISTCAT_INFORM','Informe-os e diga-lhes para se apressarem!');
 DEFINE('_LISTCAT_NO_CATS','Ainda não há categorias definidas no fórum.');
@@ -1354,8 +1618,11 @@ DEFINE('_POST_ABOUT_TO_DELETE','Você está prestes a excluir uma mensagem.');
 DEFINE('_POST_ABOUT_DELETE','<strong>NOTAS:</strong><br/>
 -se excluir um Tópico do Fórum (a primeira mensagem no tópico) todas as mensagens a seguir serão excluir!
 .. Considere apagar o conteúdo da mensagem e o nome de quem publicou, somente se o conteúdo deve ser removido...
+
+
 <br />
 - Todas as mensagens "filhas" de uma mensagem normal apagada serão movidas até 1 grau na hierarquia da discussão.');
+
 DEFINE('_POST_CLICK','clique aqui');
 DEFINE('_POST_ERROR','Não pôde encontrar o nome de usuário/e-mail. Erro grave na base de dados não listado');
 DEFINE('_POST_ERROR_MESSAGE','Ocorreu um erro desconhecido no SQL e a sua mensagem não foi enviada. Se o problema persistir, por favor contacte o administrador.');
@@ -1364,6 +1631,13 @@ DEFINE('_POST_ERROR_TOPIC','Ocorreu um erro durante as remoções. Por favor ver
 DEFINE('_POST_FORGOT_NAME','Esqueceu-se de incluir o seu nome. Clique no botão voltar do seu navegador e novamente.');
 DEFINE('_POST_FORGOT_SUBJECT','Esqueceu-se de incluir um assunto. Clique no botão voltar do seu navegador e tente novamente.');
 DEFINE('_POST_FORGOT_MESSAGE','Esqueceu-se de incluir uma mensagem. Clique no botão voltar do seu navegador e tente novamente.');
+
+
+
+
+
+
+
 DEFINE('_POST_INVALID','Um ID inválido de mensagem foi pedido.');
 DEFINE('_POST_LOCK_SET','O tópico foi fechado.');
 DEFINE('_POST_LOCK_NOT_SET','O tópico não pôde ser fechado.');
@@ -1372,8 +1646,10 @@ DEFINE('_POST_LOCK_NOT_UNSET','O tópico não pôde ser aberto.');
 DEFINE('_POST_MESSAGE','Publicar uma nova mensagem em ');
 DEFINE('_POST_MOVE_TOPIC','Mover este tópico para o fórum ');
 DEFINE('_POST_NEW','Publicar uma nova mensagem em: ');
+
 DEFINE('_POST_NO_SUBSCRIBED_TOPIC','A sua inscrição no tópico não pôde ser processada.');
 DEFINE('_POST_NOTIFIED','Marque esta caixa para que seja notificado(a) sobre respostas neste tópico.');
+
 DEFINE('_POST_STICKY_SET','Este fórum foi fixado.');
 DEFINE('_POST_STICKY_NOT_SET','Este tópico não pôde ser fixado.');
 DEFINE('_POST_STICKY_UNSET','Este tópico foi desfixado.');
@@ -1383,12 +1659,17 @@ DEFINE('_POST_SUBSCRIBED_TOPIC','Você inscreveu-se neste tópico.');
 DEFINE('_POST_SUCCESS','Sua mensagem foi enviada com sucesso');
 DEFINE('_POST_SUCCES_REVIEW','Sua mensagem foi enviada com sucesso e será revisada por um moderador antes de ser publicada no fórum.');
 DEFINE('_POST_SUCCESS_REQUEST','Seu pedido foi processado. Se não for levado de volta ao tópico dentro de alguns momentos,');
+
+
 DEFINE('_POST_TOPIC_HISTORY','Histórico do Tópico de');
 DEFINE('_POST_TOPIC_HISTORY_MAX','Max. mostrando o último');
 DEFINE('_POST_TOPIC_HISTORY_LAST','Mensagens  -  <i>(Última Mensagem primeiro)</i>');
 DEFINE('_POST_TOPIC_FLOOD1','O administrador deste fórum ativou a proteção contra flood. Aguarde ');
+
+
 DEFINE('_POST_TOPIC_FLOOD2',' segundos antes de poder enviar outra mensagem.');
 DEFINE('_POST_TOPIC_FLOOD3','Por favor clique no botão voltar do seu navegador para voltar para o fórum.');
+
 DEFINE('_POST_EMAIL_NEVER','Seu endereço de e-mail nunca será visualizado no site.');
 DEFINE('_POST_EMAIL_REGISTERED','Seu endereço de e-mail estará disponível somente para usuários registrados.');
 DEFINE('_POST_LOCKED','Fechado pelo Administrador.');
@@ -1416,6 +1697,7 @@ DEFINE('_USER_PROFILE_NOT_B','pôde');
 DEFINE('_USER_PROFILE_NOT_C',' ser atualizado.');
 DEFINE('_USER_PROFILE_UPDATED','Seu perfil foi atualizado.');
 DEFINE('_USER_RETURN_A','Se não for levado de volta para seu o perfil dentro de alguns instantes ');
+
 DEFINE('_USER_RETURN_B','clique aqui');
 DEFINE('_USER_SUBSCRIPTIONS','Suas Inscrições');
 DEFINE('_USER_UNSUBSCRIBE','Remover Inscrição');
@@ -1430,6 +1712,7 @@ DEFINE('_USER_ORDER_DESC','Última Mensagem primeiro');
 DEFINE('_USER_ORDER_ASC','Primeira Mensagem primeiro');
 // view.php
 DEFINE('_VIEW_DISABLED','O administrador desabilitou o acesso público a escrita.');
+
 DEFINE('_VIEW_POSTED','Publicado por');
 DEFINE('_VIEW_SUBSCRIBE',':: Subscrever este tópico ::');
 DEFINE('_MODERATION_INVALID_ID','Um ID de mensagem inválido foi pedido.');
@@ -1448,6 +1731,7 @@ DEFINE('_VIEW_LOCK','Trancar este tópico');
 DEFINE('_VIEW_UNLOCK','Reabrir este tópico');
 DEFINE('_VIEW_MOVE','Mover este tópico para um novo Fórum');
 DEFINE('_VIEW_SUBSCRIBETXT','Inscrever-se neste tópico e ser notificado por e-mail de novas Mensagens.');
+
 //NEW-STRINGS-FOR-TRANSLATING-READY-FOR-SIMPLEBOARD 9.2
 DEFINE('_HOME','Fórum');
 DEFINE('_POSTS','Mensagens:');
@@ -1466,6 +1750,7 @@ DEFINE('_SHOW_LAST_POSTS','Tópicos ativos nas últimas');
 DEFINE('_SHOW_HOURS','horas');
 DEFINE('_SHOW_POSTS','Total: ');
 DEFINE('_DESCRIPTION_POSTS','Novas mensagens para os tópicos ativos são mostradas em');
+
 DEFINE('_SHOW_4_HOURS','4 Horas');
 DEFINE('_SHOW_8_HOURS','8 Horas');
 DEFINE('_SHOW_12_HOURS','12 Horas');
@@ -1478,6 +1763,7 @@ DEFINE('_NO_TIMEFRAME_POSTS','Não há novas mensagens no período de tempo que 
 DEFINE('_MESSAGE','Mensagem');
 DEFINE('_NO_SMILIE','não');
 DEFINE('_FORUM_UNAUTHORIZIED','Este fórum está aberto somente a usuários registrados e logados.');
+
 DEFINE('_FORUM_UNAUTHORIZIED2','Se você já se registrou, por favor faça o login no site.');
 DEFINE('_MESSAGE_ADMINISTRATION','Moderação');
 DEFINE('_MOD_APPROVE','Aprovar');
@@ -1490,11 +1776,14 @@ DEFINE('_COM_A_EMAIL_DESC','Este é o endereço de e-mail do Fórum. Use um ende
 DEFINE('_COM_A_WRAP','Quebrar linhas maiores que');
 DEFINE('_COM_A_WRAP_DESC',
 	'Coloque o n. máximo de caracteres que uma simples palavra deve ter. Este recurso permite delimitar a largura das mensagens do KUnena para serem ajustadas ao seu template.<br />70 caracteres é o máximo de caracteres para templates de largura fixa mas você precisa realizar algumas experiências.<br/>URLs, não interessa o quanto, não são afectados pela "quebra de palavras"');
+
 DEFINE('_COM_A_SIGNATURE','Tamanho máximo da assinatura');
 DEFINE('_COM_A_SIGNATURE_DESC','N. máximo de caracteres permitidos numa assinatura de usuário.');
+
 DEFINE('_SHOWCAT_NOPENDING','Nenhuma mensagem(ns) pendente(s)');
 DEFINE('_COM_A_BOARD_OFSET','Horário de compensação do Fórum');
 DEFINE('_COM_A_BOARD_OFSET_DESC','Alguns fóruns estão localizados em servidores com fusos-horários diferentes dos usuários. Configure o tempo de compensação que o Kunena deve usar em horas. Números negativos e positivos podem ser usados.');
+
 //New in RC2
 DEFINE('_COM_A_BASICS','Básicos');
 DEFINE('_COM_A_FRONTEND','Frontend');
@@ -1503,6 +1792,8 @@ DEFINE('_COM_A_AVATARS','Avatares');
 DEFINE('_COM_A_INTEGRATION','Integração');
 DEFINE('_COM_A_PMS','Ativar mensagens privadas');
 DEFINE('_COM_A_PMS_DESC','Selecione um sistema de componente apropriado de mensagens privadas se instalou qualquer um. Selecionando Clexus PM ativará também as opções de perfil do usuário do ClexusPM user (como ICQ, AIM, Yahoo, MSN e seus link de perfil se suportados pelo template usado no Kunena');
+
+
 DEFINE('_VIEW_PMS',
 	'Clique aqui para enviar uma Mensagem Privada a este usuário');
 //new in RC3
@@ -1524,10 +1815,13 @@ DEFINE('_BBCODE_LITEM','Listar Ítem: [li] listar ítem [/li]');
 DEFINE('_BBCODE_HINT','Ajuda bbCode - Sugestão: O bbCode pode ser usado no texto selecionado!');
 DEFINE('_COM_A_TAWIDTH','Largura do campo de Texto');
 DEFINE('_COM_A_TAWIDTH_DESC','Ajustar a largura da entrada da resposta/mensagem para combinar com o seu template.<br/>A barra de Emoticon será quebrada em 2 linhas se a largura for <= 420 pixels.');
+
 DEFINE('_COM_A_TAHEIGHT','Altura do campo de texto');
 DEFINE('_COM_A_TAHEIGHT_DESC','Ajustar a altura do campo de texto da resposta/mensagem para combinar com o seu template.');
+
 DEFINE('_COM_A_ASK_EMAIL','Requerer e-mail');
 DEFINE('_COM_A_ASK_EMAIL_DESC','Pedir um endereço de e-mail quando usuários ou visitantes fizerem uma mensagem. Configure para "Não" se quiser que este recurso não seja implementado no frontend. A quem publicar não será perguntado pelo seu endereço de e-mail.');
+
 
 //Rank Administration - Dan Syme/IGD
 DEFINE('_KUNENA_RANKS_MANAGE', 'Gerenciamento de Ranks');
