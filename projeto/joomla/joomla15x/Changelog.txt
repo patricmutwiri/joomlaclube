@@ -38,3 +38,10 @@ $ -> Language fix or change
  # Autalizado o pacote para Portugues.
  $ Atualizado os arquivos de linguagem Pt-Br
 
+03-Jul-2009 Elvis Vinicius
+ ^ Adicionado links JCB no módulo 'Welcome to Joomla' (backend)
+	# installation/sql/mysql/sample_data.sql linha 199
+	+ Logo JCB para módulo (administrator/images/jcb.png)
+
+
+
