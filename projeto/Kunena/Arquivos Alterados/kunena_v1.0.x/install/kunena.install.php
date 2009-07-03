@@ -188,9 +188,9 @@ function com_install() {
 		<strong>I N S T A L A Ç Ã O : <font color="green">Sucesso</font> </strong>
 		<br />
 		<br />
-		<strong>versão do php: <font color="green"><? echo phpversion(); ?> Requireda >= <? echo KUNENA_MIN_PHP; ?> </font> </strong>
+		<strong>versão do php: <font color="green"><? echo phpversion(); ?> Requerida >= <? echo KUNENA_MIN_PHP; ?> </font> </strong>
 		<br />
-		<strong>versão do mysql: <font color="green"><? echo $mysqlversion; ?> Requireda >= <? echo KUNENA_MIN_MYSQL; ?> </font> </strong>
+		<strong>versão do mysql: <font color="green"><? echo $mysqlversion; ?> Requerida >= <? echo KUNENA_MIN_MYSQL; ?> </font> </strong>
 		</div>
 
 		<?php
@@ -250,9 +250,9 @@ function com_install() {
 		<strong>I N S T A L A Ç Ã O : <font color="red">F A L H O U - Requisitos Mínimos da Versão não satisfeitos</font> </strong>
 		<br />
 		<br />
-		<strong>versão do php: <font color="red"><? echo phpversion(); ?> Required >= <? echo KUNENA_MIN_PHP; ?> </font> </strong>
+		<strong>versão do php: <font color="red"><? echo phpversion(); ?> Requerida >= <? echo KUNENA_MIN_PHP; ?> </font> </strong>
 		<br />
-		<strong>versão do mysql: <font color="red"><? echo $mysqlversion; ?> Required >= <? echo KUNENA_MIN_MYSQL; ?> </font> </strong>
+		<strong>versão do mysql: <font color="red"><? echo $mysqlversion; ?> Requerida >= <? echo KUNENA_MIN_MYSQL; ?> </font> </strong>
 		</div>
 
 		<?php
