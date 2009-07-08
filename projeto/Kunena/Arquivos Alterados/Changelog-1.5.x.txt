@@ -44,3 +44,6 @@ $ -> Language fix or change
  	^ /kunena.files.distribution/dummy.gif
  	^ /kunena.files.distribution/dummy.jpg
  	^ /kunena.files.distribution/dummy.png
+
+27-Abr-2009 ElvisVinicius
+	$ Atualização da tradução

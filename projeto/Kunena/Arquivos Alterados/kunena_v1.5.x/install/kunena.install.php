@@ -1,6 +1,6 @@
 <?php
 /**
- * @version $Id: kunena.install.php 509 2009-03-08 08:29:23Z fxstein $
+ * @version $Id: kunena.install.php 877 2009-06-15 21:26:13Z mahagr $
  * Kunena Component
  * @package Kunena
  *
@@ -24,13 +24,34 @@ defined( '_JEXEC' ) or die('Restricted access');
 
 // Help get past php timeouts if we made it that far
 // Joomla 1.5 installer can be very slow and this helps avoid timeouts
-set_time_limit(300);
-ini_set("memory_limit", "32M");
+@set_time_limit(300);
+$kn_maxTime = @ini_get('max_execution_time');
+
+$maxMem = trim(@ini_get('memory_limit'));
+if ($maxMem) {
+	$unit = strtolower($maxMem{strlen($maxMem) - 1});
+	switch($unit) {
+		case 'g':
+			$maxMem	*=	1024;
+		case 'm':
+			$maxMem	*=	1024;
+		case 'k':
+			$maxMem	*=	1024;
+	}
+	if ($maxMem < 16000000) {
+		@ini_set('memory_limit', '16M');
+	}
+	if ($maxMem < 32000000) {
+		@ini_set('memory_limit', '32M');
+	}
+	if ($maxMem < 48000000) {
+		@ini_set('memory_limit', '48M');
+	}
+}
+ignore_user_abort(true);
 
 // Kunena wide defines
 require_once (JPATH_ROOT  .DS. 'components' .DS. 'com_kunena' .DS. 'lib' .DS. 'kunena.defines.php');
-
-global $mainframe;
 
 // get right Language file
 if (file_exists(KUNENA_PATH_ADMIN_LANGUAGE .DS. 'kunena.' . KUNENA_LANGUAGE . '.php')) {
@@ -44,26 +65,22 @@ include_once(KUNENA_PATH_ADMIN_LIB .DS. 'fx.upgrade.class.php');
 
 function com_install()
 {
-	global $mainframe;
-
-	$database = JFactory::getDBO();
+	$kunena_db = JFactory::getDBO();
 
 	// Determine MySQL version from phpinfo
-	$database->setQuery("SELECT VERSION() as mysql_version");
-	$mysqlversion = $database->loadResult();
+	$kunena_db->setQuery("SELECT VERSION() as mysql_version");
+	$mysqlversion = $kunena_db->loadResult();
 
 	//before we do anything else we want to check for minimum system requirements
-	if (version_compare(phpversion(), KUNENA_MIN_PHP, ">=") && version_compare($mysqlversion, KUNENA_MIN_MYSQL, ">="))
+	if (version_compare(phpversion(), KUNENA_MIN_PHP, ">=") && version_compare($mysqlversion, KUNENA_MIN_MYSQL, ">"))
 	{
-		// we're on 4.3.0 or later
-
 		//change fb menu icon
-		$database->setQuery("SELECT id FROM #__components WHERE admin_menu_link = 'option=com_kunena'");
-		$id = $database->loadResult();
+		$kunena_db->setQuery("SELECT id FROM #__components WHERE admin_menu_link = 'option=com_kunena'");
+		$id = $kunena_db->loadResult();
 
 		//add new admin menu images
-		$database->setQuery("UPDATE #__components SET admin_menu_img  = 'components/com_kunena/images/kunenafavicon.png'" . ",   admin_menu_link = 'option=com_kunena' " . "WHERE id='".$id."'");
-		$database->query() or trigger_dbwarning("Não foi possível definir imagem do menu do admin.");
+		$kunena_db->setQuery("UPDATE #__components SET admin_menu_img  = 'components/com_kunena/images/kunenafavicon.png'" . ",   admin_menu_link = 'option=com_kunena' " . "WHERE id='".$id."'");
+		$kunena_db->query() or trigger_dbwarning("Não foi possível definir imagem do menu do admin.");
 
 		//install & upgrade class
 		$fbupgrade = new fx_Upgrade("com_kunena", "kunena.install.upgrade.xml", "fb_", "install", false);
@@ -74,14 +91,14 @@ function com_install()
 		// a 'manual' check if this is going to be an upgrade and if so create that table
 		// and write a dummy version entry to force an upgrade.
 
-		$database->setQuery( "SHOW TABLES LIKE '%fb_messages'" );
-		$database->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de mensagens.");
+		$kunena_db->setQuery( "SHOW TABLES LIKE '%fb_messages'" );
+		$kunena_db->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de mensagens.");
 
-		if($database->getNumRows()) {
+		if($kunena_db->getNumRows()) {
 			// fb tables exist, now lets see if we have a version table
-			$database->setQuery( "SHOW TABLES LIKE '%fb_version'" );
-			$database->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de versão.");;
-			if(!$database->getNumRows()) {
+			$kunena_db->setQuery( "SHOW TABLES LIKE '%fb_version'" );
+			$kunena_db->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de versão.");;
+			if(!$kunena_db->getNumRows()) {
 				//version table does not exist - this is a pre 1.0.5 install - lets create
 				$fbupgrade->createVersionTable();
 				// insert dummy version entry to force upgrade
@@ -126,8 +143,7 @@ function com_install()
 }
 </style>
 
-<div
-	style="border: 1px solid #ccc; background: #FBFBFB; padding: 10px; text-align: left; margin: 10px 0;">
+<div style="border: 1px solid #ccc; background: #FBFBFB; padding: 10px; text-align: left; margin: 10px 0;">
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td width="20%" valign="top" style="padding: 10px;"><a
@@ -147,6 +163,7 @@ function com_install()
 			// We might want to make the file copy below part of the install as well
 			//
 
+			jimport('joomla.filesystem.folder');
 		    $ret = JFolder::copy(JPATH_ROOT .DS. "components" .DS. "com_kunena" .DS. "kunena.files.distribution",
 		    				JPATH_ROOT .DS. "images" .DS. "fbfiles", '', true);
 
@@ -225,8 +242,7 @@ function com_install()
 }
 </style>
 
-<div
-	style="border: 1px solid #ccc; background: #FBFBFB; padding: 10px; text-align: left; margin: 10px 0;">
+<div style="border: 1px solid #ccc; background: #FBFBFB; padding: 10px; text-align: left; margin: 10px 0;">
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td width="20%" valign="top" style="padding: 10px;"><a
