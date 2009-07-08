@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Id: pt-BR.xml 34 2009-01-09 01:55:02Z fabmak $ -->
+<!-- $Id: pt-BR.xml 38 2009-06-19 23:16:24Z fabmak $ -->
 <metafile version="1.5"  client="site" >
     <tag>pt-BR</tag>
     <name>Português(Brasil)</name>
     <description>Pacote de idioma em Português Brasileiro para o site (frontend) do Joomla!</description>
-    <version>1.5.9</version>
-    <creationDate>2009-01-09</creationDate>
+    <version>1.5.11</version>
+    <creationDate>2009-06-19</creationDate>
     <author>Joomla! Brasil</author>
     <authorUrl>www.joomla.com.br</authorUrl>
     <authorEmail>traducao@joomla.com.br</authorEmail>
