@@ -1,0 +1,47 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizado o changelog do VirtueMart 1.1.3 Português do Brasil gerenciado
+pela JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+------------------------------- 1.1.3 [Estável] --------------------------------
+
+08-Jul-2009 ElvisVinicius
+ # Correção de BUG (Shipping error): https://forum.virtuemart.net/index.php?topic=56844.msg186326#msg186326
+	/admin_files.tar.gz/classes/ps_shipping.php (linha 138)
+
+ $ Arquivos de Idioma
+	/admin_files.tar.gz/languages/*
+
+ + Crédito JCB
+	/frontend_files.tar.gz/virtuemart.php (linha 195)
+	/jcb.jpg
+	/admin.virtuemart.php (linha 194)
+
+ $ Tradução
+	/config.xml
+	/install.php
+	/install.virtuemart.php
+	/install.copy.php
+
+ ^ Leve melhoria no CSS da instalação
+	/install.css
+
++ Logo JCB
+	/virtuemart.xml (linha 31)
+
