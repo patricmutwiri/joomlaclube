@@ -43,5 +43,6 @@ $ -> Language fix or change
 	# installation/sql/mysql/sample_data.sql linha 199
 	+ Logo JCB para módulo (administrator/images/jcb.png)
 
-
+08-Jul-2009 Elvis Vinicius
+ $ Complementação e Correção da tradução
 
