@@ -19,7 +19,20 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
--------------------- 1.5.x Lanaçamentos [Estável] ------------------
+-------------------- 1.5.x Lançamentos [Estável] ------------------
+23-Jul-2009 Elvis Vinicius
+ $ Fix: com_media.ini (backend):
+	» http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&tracker_item_id=17008
+ # Fix: Media Manager bug:
+	» http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&tracker_item_id=17319
+
+08-Jul-2009 Elvis Vinicius
+ $ Complementação e Correção da tradução
+
+03-Jul-2009 Elvis Vinicius
+ ^ Adicionado links JCB no módulo 'Welcome to Joomla' (backend)
+	# installation/sql/mysql/sample_data.sql linha 199
+	+ Logo JCB para módulo (administrator/images/jcb.png)
 
 29-Mar-2009 ElvisVinicius
  + Inserida meta tag generator da JCB
@@ -37,12 +50,3 @@ $ -> Language fix or change
 28-Mar-2009 Trorram (Joab)
  # Autalizado o pacote para Portugues.
  $ Atualizado os arquivos de linguagem Pt-Br
-
-03-Jul-2009 Elvis Vinicius
- ^ Adicionado links JCB no módulo 'Welcome to Joomla' (backend)
-	# installation/sql/mysql/sample_data.sql linha 199
-	+ Logo JCB para módulo (administrator/images/jcb.png)
-
-08-Jul-2009 Elvis Vinicius
- $ Complementação e Correção da tradução
-
