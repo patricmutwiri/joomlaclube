@@ -1,0 +1,26 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizada o changelog do SuperBlogger Portugues Brasil gerenciado pela
+JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+-------------------- SuperBlogger Tradução ------------------
+23-Jul-2009 Joab
+
++ Inserido o pacote no SVN com a tradução do Elvis
+
