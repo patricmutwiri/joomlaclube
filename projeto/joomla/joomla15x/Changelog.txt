@@ -20,6 +20,9 @@ $ -> Language fix or change
 ! -> Note
 
 -------------------- 1.5.x Lançamentos [Estável] ------------------
+25-Jul-2009 Elvis Vinicius
+    $ Inclusão da tradução do tinymce (arquivos .js)
+
 23-Jul-2009 Elvis Vinicius
  $ Fix: com_media.ini (backend):
 	» http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&tracker_item_id=17008
