@@ -20,6 +20,10 @@ $ -> Language fix or change
 ! -> Note
 
 -------------------------------- KUKUNA v1.5.0a b1412 2009-04-03 -----------------------------------
+08-Ago-2009 ElvisVinicius
+ $ Adição da nova variável (_KUNENA_MOVED) na linha 31
+ + Imagens dos botões do template traduzidas (agradecimentos ao Kleberson)
+ ^ Atualizados arquivos kunena.php e manifest.xml para a versão 1.5.4
 
 27-Abr-2009 ElvisVinicius
  + Créditos JCB

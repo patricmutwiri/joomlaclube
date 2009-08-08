@@ -27,6 +27,9 @@
 // Dont allow direct linking
 defined( '_JEXEC' ) or die('Acesso Restrito');
 
+// 1.0.11 and 1.5.4
+DEFINE('_KUNENA_MOVED', 'Movido');
+
 // 1.0.11 and 1.5.3
 DEFINE('_KUNENA_VERSION_SVN', 'Revisão SVN');
 DEFINE('_KUNENA_VERSION_DEV', 'Development Snapshot');
