@@ -1,0 +1,27 @@
+1. Copyright e Licensas
+---------------------------
+
+Esta aplicação é opensource software sobre lincensas GPL. Por favor leia as
+licensas.
+
+2. Changelog
+------------
+Aqui disponibilizada o changelog do sh404SEF Portugues Brasil gerenciado pela
+JoomlaClube do Brasil.
+
+Legenda:
+
+* -> Security Fix
+# -> Bug Fix
+$ -> Language fix or change
++ -> Addition
+^ -> Change
+- -> Removed
+! -> Note
+
+-------------------- 1.0.20 Beta ------------------
+
+08-Jul-2009 ElvisVinicius
+
+ # /administrator/components/com_sh404sef/sh404sef.class.php (linhas 260 e 262)
+	Corrigido erro de codificação de catacteres nas variáveis: $stripthese e $shReplacements
