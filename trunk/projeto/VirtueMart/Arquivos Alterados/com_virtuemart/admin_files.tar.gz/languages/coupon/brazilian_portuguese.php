@@ -2,10 +2,15 @@
 if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.basename(__FILE__).' is not allowed.' ); 
 /**
 *
-* @version : brazilian_portuguese.php 1071 2007-12-03 08:42:28Z thepisu $
+* ================================================================================
+* CORRIGIDO PARA O PORTUGUÊS DO BRASIL - CORRECTED TO BRAZILIAN PORTUGUESE
+* v.1.9 - Fernando Soares - http://www.fernandosoares.com.br - 16-Fev-2009
+* Para (To): VirtueMart 1.1.x
+* ================================================================================
+*
 * @package VirtueMart
 * @subpackage languages
-* @copyright Copyright (C) 2004-2007 soeren - All rights reserved.
+* @copyright Copyright (C) 2004-2008 soeren - All rights reserved.
 * @translator soeren
 * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
 * VirtueMart is free software. This version may have been modified pursuant
@@ -19,13 +24,13 @@ if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.
 global $VM_LANG;
 $langvars = array (
 	'CHARSET' => 'ISO-8859-1',
-	'PHPSHOP_COUPON_EDIT_HEADER' => 'Atualizar cupom',
+	'PHPSHOP_COUPON_EDIT_HEADER' => 'Atualizar Cupom',
 	'PHPSHOP_COUPON_CODE_HEADER' => 'Código',
 	'PHPSHOP_COUPON_PERCENT_TOTAL' => 'Percentual ou Total',
 	'PHPSHOP_COUPON_TYPE' => 'Tipo de Cupom',
-	'PHPSHOP_COUPON_TYPE_TOOLTIP' => 'Um cupom de presente é apagado após ser usado como desconto ou pedido. Cupom permanente pode ser usado enquanto o cliente desejar.',
-	'PHPSHOP_COUPON_TYPE_GIFT' => 'Cupom presente',
-	'PHPSHOP_COUPON_TYPE_PERMANENT' => 'Cupom permanente',
+	'PHPSHOP_COUPON_TYPE_TOOLTIP' => 'Um Cupom Presente é deletado após ser usado para descontar um pedido. Um cupom permanente pode ser usado quantas vezes o cliente quiser.',
+	'PHPSHOP_COUPON_TYPE_GIFT' => 'Cupom Presente',
+	'PHPSHOP_COUPON_TYPE_PERMANENT' => 'Cupom Permanente',
 	'PHPSHOP_COUPON_VALUE_HEADER' => 'Valor',
 	'PHPSHOP_COUPON_PERCENT' => 'Percentual',
 	'PHPSHOP_COUPON_TOTAL' => 'Total'

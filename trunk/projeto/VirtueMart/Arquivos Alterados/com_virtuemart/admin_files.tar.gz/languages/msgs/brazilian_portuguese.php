@@ -2,6 +2,12 @@
 if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.basename(__FILE__).' is not allowed.' ); 
 /**
 *
+* ================================================================================
+* CORRIGIDO PARA O PORTUGUÊS DO BRASIL - CORRECTED TO BRAZILIAN PORTUGUESE
+* v.1.9 - Fernando Soares - http://www.fernandosoares.com.br - 16-Fev-2009
+* Para (To): VirtueMart 1.1.x
+* ================================================================================
+*
 * @version : brazilian_portuguese.php 1071 2007-12-03 08:42:28Z thepisu $
 * @package VirtueMart
 * @subpackage languages
