@@ -20,6 +20,11 @@ $ -> Language fix or change
 ! -> Note
 
 ------------------------------- 1.1.3 [Estável] --------------------------------
+05-Set-2009 ElvisVinicius
+ # Correção do BUG do método Shipping (Entregadores)
+	http://forum.virtuemart.net/index.php?topic=50643.msg163769#msg163769 (SVN)
+ $ Tradução atualizada a partir de:
+	http://www.fernandosoares.com.br/index.php?option=com_docman&task=doc_details&gid=33&Itemid=28
 
 08-Jul-2009 ElvisVinicius
  # Correção de BUG (Shipping error): https://forum.virtuemart.net/index.php?topic=56844.msg186326#msg186326

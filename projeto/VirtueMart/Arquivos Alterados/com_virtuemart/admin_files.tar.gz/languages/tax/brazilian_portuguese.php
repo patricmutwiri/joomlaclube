@@ -2,10 +2,15 @@
 if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.basename(__FILE__).' is not allowed.' ); 
 /**
 *
-* @version : brazilian_portuguese.php 1071 2007-12-03 08:42:28Z thepisu $
+* ================================================================================
+* CORRIGIDO PARA O PORTUGUÊS DO BRASIL - CORRECTED TO BRAZILIAN PORTUGUESE
+* v.1.9 - Fernando Soares - http://www.fernandosoares.com.br - 16-Fev-2009
+* Para (To): VirtueMart 1.1.x
+* ================================================================================
+*
 * @package VirtueMart
 * @subpackage languages
-* @copyright Copyright (C) 2004-2007 soeren - All rights reserved.
+* @copyright Copyright (C) 2004-2008 soeren - All rights reserved.
 * @translator soeren
 * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
 * VirtueMart is free software. This version may have been modified pursuant
@@ -19,12 +24,12 @@ if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.
 global $VM_LANG;
 $langvars = array (
 	'CHARSET' => 'ISO-8859-1',
-	'PHPSHOP_TAX_LIST_LBL' => 'Lista tarifas de imposto',
-	'PHPSHOP_TAX_LIST_STATE' => 'Impostos por estado ou região',
-	'PHPSHOP_TAX_LIST_COUNTRY' => 'Impostos no país',
-	'PHPSHOP_TAX_FORM_LBL' => 'Adicionar informação de imposto',
-	'PHPSHOP_TAX_FORM_STATE' => 'Imposto por Estado ou região',
-	'PHPSHOP_TAX_FORM_COUNTRY' => 'Imposto do país',
-	'PHPSHOP_TAX_FORM_RATE' => 'Tarifas de imposto'
+	'PHPSHOP_TAX_LIST_LBL' => 'Lista de Taxas de Imposto',
+	'PHPSHOP_TAX_LIST_STATE' => 'Imposto por Estado ou Região',
+	'PHPSHOP_TAX_LIST_COUNTRY' => 'Imposto do País',
+	'PHPSHOP_TAX_FORM_LBL' => 'Adicionar Informações do Imposto',
+	'PHPSHOP_TAX_FORM_STATE' => 'Imposto por Estado ou Região',
+	'PHPSHOP_TAX_FORM_COUNTRY' => 'Imposto do País',
+	'PHPSHOP_TAX_FORM_RATE' => 'Taxa de Imposto (para 16% => entre 0.16)'
 ); $VM_LANG->initModule( 'tax', $langvars );
 ?>

@@ -2,10 +2,15 @@
 if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.basename(__FILE__).' is not allowed.' ); 
 /**
 *
-* @version : brazilian_portuguese.php 1071 2007-12-03 08:42:28Z thepisu $
+* ================================================================================
+* CORRIGIDO PARA O PORTUGUÊS DO BRASIL - CORRECTED TO BRAZILIAN PORTUGUESE
+* v.1.9 - Fernando Soares - http://www.fernandosoares.com.br - 16-Fev-2009
+* Para (To): VirtueMart 1.1.x
+* ================================================================================
+*
 * @package VirtueMart
 * @subpackage languages
-* @copyright Copyright (C) 2004-2007 soeren - All rights reserved.
+* @copyright Copyright (C) 2004-2008 soeren - All rights reserved.
 * @translator soeren
 * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
 * VirtueMart is free software. This version may have been modified pursuant
@@ -19,16 +24,16 @@ if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.
 global $VM_LANG;
 $langvars = array (
 	'CHARSET' => 'ISO-8859-1',
-	'VM_HELP_YOURVERSION' => 'Your {product} version',
+	'VM_HELP_YOURVERSION' => 'Sua versão do {product}',
 	'VM_HELP_ABOUT' => '<span style="font-weight: bold;">
-		VirtueMart</span> is the complete Open Source E-Commerce solution for Mambo and Joomla!. 
-		It is an Application, which comes with a Component, more than 8 Modules and Mambots/Plugins.
-		It has its roots in a Shopping Cart Script called "phpShop" (Authors: Edikon Corp. & the <a href="http://www.virtuemart.org/" target="_blank">phpShop</a> community).',
-	'VM_HELP_LICENSE_DESC' => 'VirtueMart is licensed under the <a href="{licenseurl}" target="_blank">{licensename} License</a>.',
-	'VM_HELP_TEAM' => 'There\'s a small team of Developers who help in evolving this Shopping Cart Script.',
-	'VM_HELP_PROJECTLEADER' => 'Project Leader',
-	'VM_HELP_HOMEPAGE' => 'Homepage',
-	'VM_HELP_DONATION_DESC' => 'Please consider a small donation to the VirtueMart Project to help us keep up the work on this Component and create new Features.',
-	'VM_HELP_DONATION_BUTTON_ALT' => 'Make payments with PayPal - it\'s fast, free and secure!'
+		VirueMart</span> é a solução completa de E-Commerce de Código Aberto para Mambo e Joomla!. 
+		Ele é uma Aplicação a qual vem como um Componente, mais de 8 Módulos e Mambots/Plugins.
+		Ele tem suas raízes no Script de Carrinho de Compras chamado "phpShop" (Autores: Edikon Corp. & a <a href="http://www.virtuemart.org/" target="_blank">phpShop</a> comunidade).',
+	'VM_HELP_LICENSE_DESC' => 'VirtueMart é licensiado sob Licença <a href="{licenseurl}" target="_blank">{licensename}</a>.',
+	'VM_HELP_TEAM' => 'Existe uma pequena equipe de Programadores que ajudam na evolução deste Script de carrinho de compras.',
+	'VM_HELP_PROJECTLEADER' => 'Líder do Projeto',
+	'VM_HELP_HOMEPAGE' => 'Página Inicial',
+	'VM_HELP_DONATION_DESC' => 'Por favor considere uma pequena doação ao Projeto VirtueMart para nos ajudar a manter o trabalho neste componente e criar novos Recursos.',
+	'VM_HELP_DONATION_BUTTON_ALT' => 'Faça pagamentos com PayPal - ele é rápido, livre e seguro!'
 ); $VM_LANG->initModule( 'help', $langvars );
 ?>
