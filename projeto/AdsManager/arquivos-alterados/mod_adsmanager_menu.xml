@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module" version="1.0.0">
+	<name>AdsManager Menu</name>
+	<author>Thomas Papin</author>
+	<creationDate>September 2006</creationDate>
+	<copyright>This component is released under the GNU/GPL License.served.</copyright>
+	<authorEmail>thomas.papin@free.fr</authorEmail>
+	<authorUrl>www.joomprod.com</authorUrl>
+	<version>1.0.9</version>
+	<description>Displays the AdsManager Menu</description>
+	<files>
+		<filename module="mod_adsmanager_menu">mod_adsmanager_menu.php</filename>
+	</files>
+    <languages>
+		<language tag="pt-BR">pt-BR.mod_adsmanager_menu.ini</language>
+	</languages>
+	<params>
+		<param name="displaynumads" type="radio" default="1" label="Display Num of Ads" description="Display the number of ads for each categories">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</param>
+		<param name="sqltype" type="radio" default="1" label="SQL Type" description="Select SQL type if you have problem with number of ads">
+				<option value="0">Type 1</option>
+				<option value="1">Type 2</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</mosinstall>

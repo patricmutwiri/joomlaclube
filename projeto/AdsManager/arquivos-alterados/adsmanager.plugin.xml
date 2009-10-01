@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbinstall version="1.05" type="plugin" group="user">
+	<name>AdsManager-Tab</name>
+	<author>Thomas PAPIN</author>
+	<creationDate>September 2006</creationDate>
+	<copyright>(C) 2006 Thomas Papin</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>thomas.papin@free.fr</authorEmail>
+	<authorUrl>http://www.joomprod.com</authorUrl>
+	<version>1.0.1</version>
+	<description>Apresenta uma guia com os anúncios do usuário do AdsManager</description>
+	<files>
+		<filename plugin="adsmanager.plugin">adsmanager.plugin.php</filename>
+		<filename plugin="adsmanager.plugin">index.html</filename>
+	</files>
+	<params>
+		<param name="itemid" type="text" size="2" default="" label="Itemid" description="Coloque o Itemid do seu link do AdsManager" />
+	</params>
+    <tabs>
+		<tab name="Ads" description="" class="AdsManagerTab" fields="0" position="cb_tabmain" displaytype="tab">
+			<fields>
+			</fields>
+		</tab>
+	</tabs>
+</cbinstall>
