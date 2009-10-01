@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module" version="1.0.0">
+	<name>AdsManager Ads</name>
+	<author>Thomas Papin</author>
+	<creationDate>September 2006</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>thomas.papin@free.fr</authorEmail>
+	<authorUrl>www.joomprod.com</authorUrl>
+	<version>1.0.7</version>
+	<description>Displays the latest / random / popular ads of AdsManager</description>
+	<files>
+		<filename module="mod_adsmanager_ads">mod_adsmanager_ads.php</filename>
+	</files>
+    <languages>
+		<language tag="pt-BR">pt-BR.mod_adsmanager_ads.ini</language>
+	</languages>
+	<params>
+		<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="random" type="radio" default="0" label="Random Ads" description="Display Latest / Random / Popular Ads">
+			<option value="0">Latest</option>
+			<option value="1">Random</option>
+			<option value="2">Popular</option>
+		</param>
+		<param name="nb_ads" type="text" default="3" size="2" label="Number of Ads" description="Number of Ads to be displayed" />
+		<param name="style" type="radio" default="hor" label="Module Style" description="The module style">
+			<option value="ver">Vertical</option>
+			<option value="hor">Horizontal</option>
+		</param>
+		<param name="image" type="radio" default="1" label="Display Picture" description="Display ads picture">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="displaycategory" type="radio" default="1" label="Display Category" description="Display Ad's Category">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="displaydate" type="radio" default="1" label="Display Date" description="Display Ad's Date">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="catselect" type="text" default="" size="4" label="catselect" description="display ads from a specific category" />
+		<param name="default_itemid" type="text" default="" size="4" label="Itemid" description="Specific Itemid. If empty the current itemid will be used" />
+	</params>	
+</mosinstall>
