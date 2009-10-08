@@ -38,23 +38,23 @@ $posttime = CKunenaTools::fbGetInternalTime();
 
 $query="INSERT INTO `#__fb_categories` VALUES (1, 0, '".addslashes(_KUNENA_SAMPLE_MAIN_CATEGORY_TITLE)."', 0, 0, 0, 1, NULL, 0, 0, 0, 0, 1, 0, 1, 0, '0000-00-00 00:00:00', 0, 0, '".addslashes(_KUNENA_SAMPLE_MAIN_CATEGORY_DESC)."', '".addslashes(_KUNENA_SAMPLE_MAIN_CATEGORY_HEADER)."', '', 0, 0, 0, NULL);";
 $kunena_db->setQuery($query);
-$kunena_db->query() or trigger_dbwarning('NÃ£o foi possÃ­vel inserir categoria de inÃ­cio de exemplo');
+$kunena_db->query() or trigger_dbwarning('Não foi possível inserir categoria de início de exemplo');
 
 $query="INSERT INTO `#__fb_categories` VALUES (2, 1, '".addslashes(_KUNENA_SAMPLE_FORUM1_TITLE)."', 0, 0, 0, 1, NULL, 0, 0, 0, 0, 1, 0, 1, 0, '0000-00-00 00:00:00', 0, 0, '".addslashes(_KUNENA_SAMPLE_FORUM1_DESC)."', '".addslashes(_KUNENA_SAMPLE_FORUM1_HEADER)."', '', 0, 0, 0, NULL);";
 $kunena_db->setQuery($query);
-$kunena_db->query() or trigger_dbwarning('NÃ£o foi possÃ­vel inserir FÃ³rum 1 de exemplo');
+$kunena_db->query() or trigger_dbwarning('Não foi possível inserir Fórum 1 de exemplo');
 
 $query="INSERT INTO `#__fb_categories` VALUES (3, 1, '".addslashes(_KUNENA_SAMPLE_FORUM2_TITLE)."', 0, 0, 0, 1, NULL, 0, 0, 0, 0, 2, 0, 1, 0, '0000-00-00 00:00:00', 0, 0, '".addslashes(_KUNENA_SAMPLE_FORUM2_DESC)."', '".addslashes(_KUNENA_SAMPLE_FORUM2_HEADER)."', '', 0, 0, 0, NULL);";
 $kunena_db->setQuery($query);
-$kunena_db->query() or trigger_dbwarning('NÃ£o foi possÃ­vel inserir FÃ³rum 2 de exemplo');
+$kunena_db->query() or trigger_dbwarning('Não foi possível inserir Fórum 2 de exemplo');
 
 $query="INSERT INTO `#__fb_messages` VALUES (1, 0, 1, 2, 'Kunena', 62, 'info@kunena.com', '".addslashes(_KUNENA_SAMPLE_POST1_SUBJECT)."', $posttime, '127.0.0.1', 0, 0, 0, 0, 0, 0, NULL, NULL, NULL);";
 $kunena_db->setQuery($query);
-$kunena_db->query() or trigger_dbwarning('NÃ£o foi possÃ­vel inserir mensagem de exemplo');
+$kunena_db->query() or trigger_dbwarning('Não foi possível inserir mensagem de exemplo');
 
 $query="INSERT INTO `#__fb_messages_text` VALUES (1, '".addslashes(_KUNENA_SAMPLE_POST1_TEXT)."');";
 $kunena_db->setQuery($query);
-$kunena_db->query() or trigger_dbwarning('Ã£o foi possÃ­vel inserir texto da mensagem de exemplo');
+$kunena_db->query() or trigger_dbwarning('ão foi possível inserir texto da mensagem de exemplo');
 
 CKunenaTools::reCountBoards();
 

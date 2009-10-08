@@ -19,7 +19,7 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
--------------------------------- KUKUNA v1.5.0a b1412 2009-04-03 -----------------------------------
+---------------------------------- KUKUNA v1.5.6 2009-10-08 ----------------------------------------
 08-Ago-2009 ElvisVinicius
  $ Adição da nova variável (_KUNENA_MOVED) na linha 31
  + Imagens dos botões do template traduzidas (agradecimentos ao Kleberson)

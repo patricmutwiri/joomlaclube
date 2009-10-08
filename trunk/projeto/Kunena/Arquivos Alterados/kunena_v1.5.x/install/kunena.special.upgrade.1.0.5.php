@@ -33,24 +33,24 @@ $is_101_version = $kunena_db->loadResult();
 if ($is_101_version) {
     // now do the upgrade
     $kunena_db->setQuery("update #__fb_attachments set filelocation = replace(filelocation,'{$root}/components/com_fireboard/uploaded','/images/fbfiles');");
-    if ($kunena_db->query()) print '<li class="fbscslist">Tabela de anexos atualizada com sucesso para o esquema da vers√£o 1.0.2+!</li>';
+    if ($kunena_db->query()) print '<li class="fbscslist">Tabela de anexos atualizada com sucesso para o esquema da vers„o 1.0.2+!</li>';
     else
     {
-    	print '<li class="fbscslisterror">Tabela de anexos n√£o foi atualizada com sucesso para o esquema da vers√£o 1.0.2+!</li>';
-    	trigger_dbwarning("N√£o foi poss√≠vel atualizar tabela de anexos.");
+    	print '<li class="fbscslisterror">Tabela de anexos n„o foi atualizada com sucesso para o esquema da vers„o 1.0.2+!</li>';
+    	trigger_dbwarning("N„o foi possÌvel atualizar tabela de anexos.");
     }
 
     $kunena_db->setQuery("update #__fb_messages_text set message = replace(message,'/components/com_fireboard/uploaded','/images/fbfiles');");
-    if ($kunena_db->query()) print '<li class="fbscslist">Anexos na tabela de mensagens foram atualizados com √™xito para o esquema da vers√£o 1.0.2+!</li>';
+    if ($kunena_db->query()) print '<li class="fbscslist">Anexos na tabela de mensagens foram atualizados com Íxito para o esquema da vers„o 1.0.2+!</li>';
     else
     {
-    	print '<li class="fbscslist">Anexos na tabela de mensagens n√£o foram atualizados com √™xito para o esquema da vers√£o 1.0.2+!</li>';
-    	trigger_dbwarning("N√£o foi poss√≠vel atualizar anexos na tabela de mensagens.");
+    	print '<li class="fbscslist">Anexos na tabela de mensagens n„o foram atualizados com Íxito para o esquema da vers„o 1.0.2+!</li>';
+    	trigger_dbwarning("N„o foi possÌvel atualizar anexos na tabela de mensagens.");
     }
 
     //backward compatibility . all the cats are by default moderated
     $kunena_db->setQuery("UPDATE `#__fb_categories` SET `moderated` = '1';");
-    $kunena_db->query() or trigger_dbwarning("N√£o foi poss√≠vel atualizar categorias.");;
+    $kunena_db->query() or trigger_dbwarning("N„o foi possÌvel atualizar categorias.");;
 }
 
 ?>

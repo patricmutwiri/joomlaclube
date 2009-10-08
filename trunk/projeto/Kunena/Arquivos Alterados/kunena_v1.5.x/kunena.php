@@ -1,6 +1,6 @@
 <?php
 /**
-* @version $Id: kunena.php 902 2009-06-28 00:16:13Z mahagr $
+* @version $Id: kunena.php 1042 2009-08-27 05:58:01Z mahagr $
 * Kunena Component
 * @package Kunena
 *
@@ -36,16 +36,16 @@ global $is_Moderator;
 global $message;
 
 // Get all the variables we need and strip them in case
-$action 		= JRequest::getVar('action', '');
+$action 		= JRequest::getCmd('action', '');
 $catid 			= JRequest::getInt('catid', 0);
 $contentURL 	= JRequest::getVar('contentURL', '');
-$do 			= JRequest::getVar('do', '');
+$do 			= JRequest::getCmd('do', '');
 $email 			= JRequest::getVar('email', '');
 $favoriteMe 	= JRequest::getVar('favoriteMe', '');
 $fb_authorname 	= JRequest::getVar('fb_authorname', '');
 $fb_thread 		= JRequest::getInt('fb_thread', 0);
-$func 			= strtolower(JRequest::getVar('func', ''));
-$id 			= JRequest::getVar('id', '');
+$func 			= strtolower(JRequest::getCmd('func', ''));
+$id 			= JRequest::getInt('id', 0);
 $limit 			= JRequest::getInt('limit', 0);
 $limitstart 	= JRequest::getInt('limitstart', 0);
 $markaction 	= JRequest::getVar('markaction', '');
@@ -257,16 +257,16 @@ else
 }
 
 if ($fbConfig->joomlastyle < 1) {
-	if (file_exists(KUNENA_JTEMPLATEPATH.'/css/kunena.forum.css')) 
+	if (file_exists(KUNENA_JTEMPLATEPATH.'/css/kunena.forum.css'))
 	{
 		$document->addStyleSheet(KUNENA_JTEMPLATEURL . '/css/kunena.forum.css');
 	}
-	else 
+	else
 	{
 		$document->addStyleSheet(KUNENA_TMPLTCSSURL);
 	}
 }
-else 
+else
 {
 	$document->addStyleSheet(KUNENA_DIRECTURL . '/template/default/joomla.css');
 }
@@ -403,7 +403,12 @@ require_once (KUNENA_PATH_LIB .DS. 'kunena.session.class.php');
 
 	// no access to categories?
 	if (!$fbSession->allowed) $fbSession->allowed = '0';
-
+	
+	// Integration with GroupJive, Jomsocial:
+	$params = array($kunena_my->id, &$fbSession->allowed);
+	if (is_object($kunenaProfile))
+		$kunenaProfile->trigger('getAllowedForumsRead', $params);
+	
 //Disabled threaded view option for Kunena
 //    //Initial:: determining what kind of view to use... from profile, cookie or default settings.
 //    //pseudo: if (no view is set and the cookie_view is not set)
@@ -502,7 +507,7 @@ require_once (KUNENA_PATH_LIB .DS. 'kunena.session.class.php');
         }
     //FINISH: PROFILEBOX
 
-    switch ($func)
+    switch (strtolower($func))
     {
         case 'who':
             if (file_exists(KUNENA_ABSTMPLTPATH . '/plugin/who/who.php')) {

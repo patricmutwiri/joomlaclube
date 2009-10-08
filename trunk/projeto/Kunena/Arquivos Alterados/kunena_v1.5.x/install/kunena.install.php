@@ -1,6 +1,6 @@
 <?php
 /**
- * @version $Id: kunena.install.php 877 2009-06-15 21:26:13Z mahagr $
+ * @version $Id: kunena.install.php 1063 2009-09-07 12:41:38Z mahagr $
  * Kunena Component
  * @package Kunena
  *
@@ -91,13 +91,14 @@ function com_install()
 		// a 'manual' check if this is going to be an upgrade and if so create that table
 		// and write a dummy version entry to force an upgrade.
 
-		$kunena_db->setQuery( "SHOW TABLES LIKE '%fb_messages'" );
+		$kunena_db->setQuery( "SHOW TABLES LIKE ".$kunena_db->quote($kunena_db->getPrefix().'fb_messages') );
 		$kunena_db->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de mensagens.");
 
 		if($kunena_db->getNumRows()) {
 			// fb tables exist, now lets see if we have a version table
-			$kunena_db->setQuery( "SHOW TABLES LIKE '%fb_version'" );
-			$kunena_db->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de versão.");;
+			$kunena_db->setQuery( "SHOW TABLES LIKE ".$kunena_db->quote($kunena_db->getPrefix().'fb_version') );
+			$kunena_db->query() or trigger_dbwarning("Não foi possível pesquisar por tabela de versão.");
+
 			if(!$kunena_db->getNumRows()) {
 				//version table does not exist - this is a pre 1.0.5 install - lets create
 				$fbupgrade->createVersionTable();
@@ -199,9 +200,9 @@ function com_install()
 		<strong>I N S T A L A Ç Ã O : <font color="green">Sucesso</font> </strong>
 		<br />
 		<br />
-		<strong>versão do php: <font color="green"><? echo phpversion(); ?> Requireda >= <? echo KUNENA_MIN_PHP; ?> </font> </strong>
+		<strong>versão do php: <font color="green"><?php echo phpversion(); ?></font> (Requerida &gt;= <?php echo KUNENA_MIN_PHP; ?>)</strong>
 		<br />
-		<strong>versão do mysql: <font color="green"><? echo $mysqlversion; ?> Requireda >= <? echo KUNENA_MIN_MYSQL; ?> </font> </strong>
+		<strong>versão do mysql: <font color="green"><?php echo $mysqlversion; ?></font> (Requerida &gt; <?php echo KUNENA_MIN_MYSQL; ?>)</strong>
 		</div>
 
 		<?php
@@ -260,9 +261,9 @@ function com_install()
 		<strong>I N S T A L A Ç Ã O : <font color="red">F A L H O U - Requisitos Mínimos da Versão não satisfeitos</font> </strong>
 		<br />
 		<br />
-		<strong>versão do php: <font color="red"><? echo phpversion(); ?> Required >= <? echo KUNENA_MIN_PHP; ?> </font> </strong>
+		<strong>versão do php: <font color="<?php echo version_compare(phpversion(), KUNENA_MIN_PHP, '>=')?'green':'red'; ?>"><?php echo phpversion(); ?></font> (Required &gt;= <?php echo KUNENA_MIN_PHP; ?>)</strong>
 		<br />
-		<strong>versão do mysql: <font color="red"><? echo $mysqlversion; ?> Required >= <? echo KUNENA_MIN_MYSQL; ?> </font> </strong>
+		<strong>versão do mysql: <font color="<?php echo version_compare($mysqlversion, KUNENA_MIN_MYSQL, '>')?'green':'red'; ?>"><?php echo $mysqlversion; ?></font> (Required &gt; <?php echo KUNENA_MIN_MYSQL; ?>)</strong>
 		</div>
 
 		<?php
@@ -270,7 +271,8 @@ function com_install()
 
 	// Rest of footer
 	?>
-		<div style="border: 1px solid #99CCFF; background: #D9D9FF; padding: 20px; margin: 20px; clear: both;">
+		<div
+			style="border: 1px solid #99CCFF; background: #D9D9FF; padding: 20px; margin: 20px; clear: both;">
 		<strong>Obrigado por usar Kunena!</strong> <br />
 
 		Kunena Forum Component <em>para Joomla! </em> &copy; by <a
