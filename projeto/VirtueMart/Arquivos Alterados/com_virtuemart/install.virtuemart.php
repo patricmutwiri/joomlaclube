@@ -148,9 +148,7 @@ function com_install() {
 						<div class="install">
 							<div id="stepbar">
 								<div style="text-align: center; ">
-									<a href="http://virtuemart.net" target="_blank"><img border="0" align="center" src="components/com_virtuemart/cart.gif" alt="Cart" /></a>
-									<br/>
-									<a href="http://www.joomlaclube.com.br" target="_blank"><img border="0" align="center" src="components/com_virtuemart/jcb.jpg" alt="JoomlaClube - brazil open source" /></a>
+									<a href="http://virtuemart.net" target="_blank"><img border="0" align="center" src="components/com_virtuemart/cart.gif" alt="Cart" /></a><br/><a href="http://www.joomlaclube.com.br" target="_blank"><img border="0" align="center" src="components/com_virtuemart/jcb.jpg" alt="JoomlaClube - brazil open source" /></a>
 									<br/>
 								</div>
 								<div class="clr"></div>
@@ -185,7 +183,9 @@ function com_install() {
 									<tr>
 										<td width="40%">Instalação Básica concluída. Você pode usar VirtueMart depois de clicar no link abaixo.<br/></td>
 										<td width="20%">&nbsp;</td>
-										<td width="40%">Para preencher a sua loja com produtos fictícios, e ter uma idéia de como as coisas podem ser configuradas, você pode instalar alguns Dados de Exemplo.</td>
+										<td width="40%">Para preencher a sua loja com produtos fictícios, e ter uma idéia de como as coisas podem ser configuradas,
+										você pode instalar alguns Dados de Exemplo.
+										</td>
 									</tr>
 									<tr>
 										<td width="40%">
@@ -213,6 +213,7 @@ function com_install() {
 												<a title="ATUALIZAR DA VERSÃO <?php echo $old_version ?> &gt;&gt;" onclick="alert('Por favor não interrompa o próximo passo!\n Ele é essencial para a aualização do VirtueMart.');" name="Button2" class="button" href="index2.php?option=com_virtuemart&install_type=updatevm10x">ATUALIZAR DA VERSÃO <?php echo $old_version ?> &gt;&gt;</a>
 											</div><br /><br/>
 											Sua versão do VirtueMart NÃO é <strong><?php echo $old_version ?></strong>? Então, por favor, exclua o arquivo <strong><?php echo dirname(__FILE__).'/install.php' ?></strong><br />
+											
 										</td>
 									</tr>
 									<?php

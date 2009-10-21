@@ -2,7 +2,7 @@
 if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.basename(__FILE__).' is not allowed.' );
 /**
 *
-* @version $Id: admin.virtuemart.php 1589 2008-12-08 20:27:20Z soeren_nb $
+* @version $Id: admin.virtuemart.php 1958 2009-10-08 20:09:57Z soeren_nb $
 * @package VirtueMart
 * @subpackage core
 * @copyright Copyright (C) 2004-2008 soeren - All rights reserved.
@@ -15,7 +15,6 @@ if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.
 *
 * http://virtuemart.net
 */
-
 defined( '_VM_IS_BACKEND' ) or define( '_VM_IS_BACKEND', '1' );
 
 include( dirname(__FILE__).'/compat.joomla1.5.php');
@@ -37,7 +36,7 @@ if( $task == 'extlayout') {
 // Include The Version File
 include_once( ADMINPATH. 'version.php' );
 if( !isset( $VMVERSION ) || !is_object( $VMVERSION ) ) {
-	$VMVERSION =& new vmVersion();
+	$VMVERSION = new vmVersion();
 }
 
 // Get the Layout Type from the Cookie
@@ -52,14 +51,14 @@ ob_get_level() or ob_start();
 setcookie('vmLayout', $vmLayout, time()+604800);
 
 // pages, which are called through index3.php are PopUps, they should not need a menu (but it can be overridden by $_REQUEST['no_menu'])
-$no_menu_default = strstr( $_SERVER['PHP_SELF'], 'index3.php') ? 1 : 0;
+$no_menu_default = strstr( $_SERVER['SCRIPT_NAME'], 'index3.php') ? 1 : 0;
 $no_menu = $_REQUEST['no_menu'] = vmGet( $_REQUEST, 'no_menu', $no_menu_default );
 
 // Display the toolbar?
 $no_toolbar = vmGet( $_REQUEST, 'no_toolbar', 0 );
 
 // Display just the naked page without toolbar, menu and footer?
-$only_page_default = strstr( $_SERVER['PHP_SELF'], 'index3.php') ? 1 : 0;
+$only_page_default = strstr( $_SERVER['SCRIPT_NAME'], 'index3.php') ? 1 : 0;
 $only_page = $_REQUEST['only_page'] = vmGet( $_REQUEST, 'only_page', $only_page_default );
 
 if( empty( $page ) || empty( $_REQUEST['page'])) {
@@ -74,7 +73,7 @@ if( empty( $page ) || empty( $_REQUEST['page'])) {
 	}
 	else {
 		$page = vmget( $_SESSION, 'last_page', 'store.index' );
-
+		
 	}
 }
 $limit = $vm_mainframe->getUserStateFromRequest( "viewlistlimit", 'limit', $mosConfig_list_limit );
@@ -91,14 +90,14 @@ if( $pagePermissionsOK ) {
 	$pagename = $my_page[1];
 }
 if( !defined('_VM_TOOLBAR_LOADED') && $no_toolbar != 1 ) {
-	if( $vmLayout == 'standard' && strstr($_SERVER['PHP_SELF'], 'index3.php')) {
+	if( $vmLayout == 'standard' && strstr($_SERVER['SCRIPT_NAME'], 'index3.php')) {
 		echo '<div align="right" class="menudottedline">';
 		include_once( ADMINPATH.'toolbar.virtuemart.php');
 		echo '</div>';
 	} else {
 		include( ADMINPATH.'toolbar.php');
 	}
-
+	
 }
 // Include the Stylesheet
 $vm_mainframe->addStyleSheet( VM_THEMEURL.'admin.styles.css' );
@@ -112,10 +111,10 @@ if( $no_menu != 1 && $vmLayout != 'extended' ) {
 }
 
 if( $only_page != 1 && $vmLayout == 'extended') {
-
+	
 	vmCommonHTML::loadExtjs();
-	$vm_mainframe->addScript( $_SERVER['PHP_SELF'].'?option='.$option.'&task=extlayout' );
-	$phpscript_url = str_replace( 'index2.php', 'index3.php', str_replace('index.php', 'index3.php', $_SERVER['PHP_SELF']));
+	$vm_mainframe->addScript( $_SERVER['SCRIPT_NAME'].'?option='.$option.'&amp;task=extlayout' );
+	$phpscript_url = str_replace( 'index2.php', 'index3.php', str_replace('index.php', 'index3.php', $_SERVER['SCRIPT_NAME']));
 
 	echo '<iframe id="vmPage" src="'.$phpscript_url.'?option=com_virtuemart&amp;page='.$_SESSION['last_page'].'&amp;only_page=1&amp;no_menu=1" style="width:100%; height: 100%; overflow:auto; border: none;padding-left:4px;" name="vmPage"></iframe>';
 
@@ -123,7 +122,7 @@ if( $only_page != 1 && $vmLayout == 'extended') {
 
 	if( $vmLayout == 'extended' ) {
 		echo '<div id="vm-toolbar"></div>';
-
+	
 		if( $no_toolbar != 1 ) {
 			$bar =& vmToolBar::getInstance('virtuemart');
 			$bar->render();
@@ -138,9 +137,9 @@ if( $only_page != 1 && $vmLayout == 'extended') {
 		include( PAGEPATH. ERRORPAGE .'.php');
 		return;
 	}
-
+	
 	if(file_exists(PAGEPATH.$modulename.".".$pagename.".php")) {
-
+		
 		if( $only_page ) {
 			if( @$_REQUEST['format'] == 'raw' ) while( @ob_end_clean());
 			if( $func ) echo vmCommonHTML::getSuccessIndicator( $ok, $vmDisplayLogger );
@@ -156,7 +155,7 @@ if( $only_page != 1 && $vmLayout == 'extended') {
 	else {
 		include( PAGEPATH.'store.index.php' );
 	}
-
+	
 	if( $vmLayout != 'extended' ) {
 		echo '<br style="clear:both;"/><div class="smallgrey" align="center">'
 	                .$VMVERSION->PRODUCT.' '.$VMVERSION->RELEASE
@@ -176,10 +175,10 @@ if( $only_page != 1 && $vmLayout == 'extended') {
 	        if(a && !a.onclick && a.href.indexOf("javascript:") == -1 && a.href.indexOf("func=") == -1 ) {
 	            e.preventDefault();
 	            parent.addSimplePanel( a.title != "" ? a.title : a.innerHTML, a.href );
-	   		}
+	   		}  
 	    } catch(e) {}
 	};
-
+	
 	Ext.get("vmPage").mon("click", listItemClicked );');
 		}
 	} else {
