@@ -1,4 +1,4 @@
-<?php
+<?php 
 if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.basename(__FILE__).' is not allowed.' );
 /**
 *
@@ -17,7 +17,7 @@ if( !defined( '_VALID_MOS' ) && !defined( '_JEXEC' ) ) die( 'Direct Access to '.
 */
 
 global $mosConfig_absolute_path, $product_id, $vmInputFilter, $vmLogger;
-
+        
 /* Load the virtuemart main parse code */
 require_once( dirname(__FILE__) . '/virtuemart_parser.php' );
 
@@ -47,7 +47,7 @@ else {
 		echo "<style type='text/css' media='print'>.vmNoPrint { display: none }</style>";
 		echo vmCommonHTML::PrintIcon('', true, ' '.$VM_LANG->_('CMN_PRINT') );
 	}
-
+	
 	// The Vendor ID is important
 	$ps_vendor_id = $_SESSION['ps_vendor_id'];
 
@@ -100,9 +100,9 @@ else {
 			)
 		&& !stristr($page, "shop.")
 	) {
-
+		
 		define( '_FRONTEND_ADMIN_LOADED', '1' );
-
+		
 		if( vmIsJoomla(1.5) ) {
 			$editor =& JFactory::getEditor();
 			echo $editor->initialise();
@@ -119,7 +119,7 @@ else {
 		$editor2_array = Array('store.store_form' => 'vendor_terms_of_service',
 		'vendor.vendor_form' => 'vendor_terms_of_service');
 		editorScript(isset($editor1_array[$page]) ? $editor1_array[$page] : '', isset($editor2_array[$page]) ? $editor2_array[$page] : '');
-
+		
 		$vm_mainframe->addStyleSheet( VM_THEMEURL .'admin.css' );
 		$vm_mainframe->addStyleSheet( VM_THEMEURL .'admin.styles.css' );
 		$vm_mainframe->addScript( "$mosConfig_live_site/components/$option/js/functions.js" );
@@ -145,14 +145,14 @@ else {
         // I have wrapped it with a function, because it becomes
         // cacheable that way.
         // It's just an "include" statement which loads the page
-        $vmDoCaching = ($page=="shop.browse" || $page=="shop.product_details")
+        $vmDoCaching = ($page=="shop.browse" || $page=="shop.product_details") 
                         && (empty($keyword) && empty($keyword1) && empty($keyword2));
-
+		
         // IE6 PNG transparency fix
         $vm_mainframe->addScript( "$mosConfig_live_site/components/$option/js/sleight.js" );
 
 		echo '<div id="vmMainPage">'."\n";
-
+		
 		// Load requested PAGE
 		if( file_exists( PAGEPATH.$modulename.".".$pagename.".php" )) {
 			if( $only_page) {
@@ -174,9 +174,9 @@ else {
 	    if ( !empty($mosConfig_caching) && $vmDoCaching) {
 	        echo '<span class="small">'.$VM_LANG->_('LAST_UPDATED').': '.strftime( $vendor_date_format ).'</span>';
 	    }
-
+	    
 	    echo "\n<div id=\"statusBox\" style=\"text-align:center;display:none;visibility:hidden;\"></div></div>\n";
-
+	    
 	    if(SHOWVERSION && !$is_popup) {
 			include(PAGEPATH ."footer.php");
 	    }
@@ -185,13 +185,15 @@ else {
 		if (vmShouldDebug()) {  /*@MWM1: Log/Debug enhancements */
 			$end = utime();
 			$runtime = $end - $start;
-
+			
 			include( PAGEPATH . "shop.debug.php" );
 		}
 
 }
 $vm_mainframe->close();
 ?>
-<br /><div style="border-top: 1px solid #eee; text-align:center; padding:3px;">
+
+<br />
+<div style="border-top: 1px solid #eee; text-align:center; padding:3px;">
 	<a href="http://www.joomlaclube.com.br/" target="_blank"><span style="color:#00adbc;">joomla</span><span style="color:#636363">clube</span></a> <span style="color:#b9b9b9">brazil open source</span>
 </div>

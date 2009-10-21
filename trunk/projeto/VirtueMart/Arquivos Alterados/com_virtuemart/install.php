@@ -110,7 +110,8 @@ function installvirtuemart( $install_type, $install_sample_data=false ){
 	}
 	if( !file_exists( $admin_dir .'/classes/ps_database.php' ) || !file_exists( $admin_dir.'/sql/sql.virtuemart.php' ) ) {
 		echo '<h2>Erro Crítico:</h2>
-		<p class="message">Alguns arquivos principais do VirtueMart estão faltando, mas eles são necessários para instalar e executar o VirtueMart. Se você receber esta mensagem, é recomendável a <a href="http://virtuemart.net/documentation/User_Manual/Manual_Installation.html" target="_blank">leitura do Manual de Instalação</a> do VirtueMart!</p>
+		<p class="message">Alguns arquivos principais do VirtueMart estão faltando, mas eles são necessários para instalar e executar o VirtueMart. Se você receber esta mensagem,
+		é recomendável a <a href="http://virtuemart.net/documentation/User_Manual/Manual_Installation.html" target="_blank">leitura do Manual de Instalação</a> do VirtueMart!</p>
 		<p><a href="index2.php">Clique aqui para retornar ao Joomla!</a></p>';
 		exit;
 	}
