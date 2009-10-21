@@ -19,6 +19,10 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
+------------------------------- 1.1.4 [Estável] --------------------------------
+20-Out-2009 ElvisVinicius
+! Pacote com as mesmas aplicações da versão anterior.
+
 ------------------------------- 1.1.3 [Estável] --------------------------------
 05-Set-2009 ElvisVinicius
  # Correção do BUG do método Shipping (Entregadores)
