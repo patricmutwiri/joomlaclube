@@ -20,6 +20,10 @@ $ -> Language fix or change
 ! -> Note
 
 -------------------- 1.5.x Lançamentos [Estável] ------------------
+07-Nov-2009 Trorram
+	- Removido o header da JCB, devido a polemica e receio da comunidade e tambem a falta de resultados.
+		» http://www.joomlaclube.com.br/site/forum/viewtopic.php?f=17&t=4376&p=21629#p21629
+
 25-Jul-2009 Elvis Vinicius
     $ Inclusão da tradução do tinymce (arquivos .js)
 
