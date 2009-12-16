@@ -1,12 +1,12 @@
 1. Copyright e Licensas
 ---------------------------
 
-Esta aplicaÁ„o È opensource software sobre lincensas GPL. Por favor leia as
+Esta aplica√ß√£o √© opensource software sobre lincensas GPL. Por favor leia as
 licensas.
 
 2. Changelog
 ------------
-Aqui disponibilizado o changelog do KUKUNA 1.5.x PortuguÍs do Brasil
+Aqui disponibilizado o changelog do KUKUNA 1.5.x Portugu√™s do Brasil
 gerenciado pela JoomlaClube do Brasil.
 
 Legenda:
@@ -19,35 +19,38 @@ $ -> Language fix or change
 - -> Removed
 ! -> Note
 
----------------------------------- KUKUNA v1.5.6 2009-10-08 ----------------------------------------
+--------------------------------------- KUKUNA v1.5.* ----------------------------------------------
+16-Dez-2009 ElvisVinicius
+ ^ Atualiza√ß√£o com a tradu√ß√£o do Fernando Soares
+
 08-Ago-2009 ElvisVinicius
- $ AdiÁ„o da nova vari·vel (_KUNENA_MOVED) na linha 31
- + Imagens dos botıes do template traduzidas (agradecimentos ao Kleberson)
- ^ Atualizados arquivos kunena.php e manifest.xml para a vers„o 1.5.4
+ $ Adi√ß√£o da nova vari√°vel (_KUNENA_MOVED) na linha 31
+ + Imagens dos bot√µes do template traduzidas (agradecimentos ao Kleberson)
+ ^ Atualizados arquivos kunena.php e manifest.xml para a vers√£o 1.5.4
 
 27-Abr-2009 ElvisVinicius
- + CrÈditos JCB
+ + Cr√©ditos JCB
 	^ /kunena.php linha 944
 
- ^ AtualizaÁ„o do XML de instalaÁ„o.
+ ^ Atualiza√ß√£o do XML de instala√ß√£o.
 	^ /manifest.xml
 	+ <filename>images/jcb.logo.png</filename> linha 614
 	+ <filename>language/kunena.brazilian_portuguese.php</filename> linha 622
 
- $ TraduÁ„o das mensagens de instalaÁ„o/desinstalaÁ„o.
+ $ Tradu√ß√£o das mensagens de instala√ß√£o/desinstala√ß√£o.
 	^ /install/kunena.install.php
 	^ /install/kunena.special.install.php
 	^ /install/kunena.special.upgrade.1.0.5.php
 	^ /install/kunena.special.upgrade.1.0.8.php
 
- $ TraduÁ„o/correÁ„o/revis„o do arquivo de idioma
+ $ Tradu√ß√£o/corre√ß√£o/revis√£o do arquivo de idioma
 	+ /language/kunena.brazilian_portuguese.php
 
- $ Imagens alteradas com texto em PortuguÍs do Brasil
+ $ Imagens alteradas com texto em Portugu√™s do Brasil
  	^ /kunena.files.distribution/images/index.gif
  	^ /kunena.files.distribution/dummy.gif
  	^ /kunena.files.distribution/dummy.jpg
  	^ /kunena.files.distribution/dummy.png
 
 27-Abr-2009 ElvisVinicius
-	$ AtualizaÁ„o da traduÁ„o
+	$ Atualiza√ß√£o da tradu√ß√£o
