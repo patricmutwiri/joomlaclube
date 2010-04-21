@@ -1,4 +1,4 @@
-// pt-BR lang variables by Elvis Vinicius <elvisvinicius@gmail.com>
+// pt-BR lang variables by Elvis Vinicius <elvisvinicius@pevermelho.com>
 
 tinyMCE.addToLang('',{
 bold_desc : 'Negrito (Ctrl+B)',

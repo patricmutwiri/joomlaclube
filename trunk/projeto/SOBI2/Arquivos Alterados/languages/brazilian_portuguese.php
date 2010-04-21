@@ -14,13 +14,19 @@
 * it under the terms of the GNU Lesser General Public License as published by
 * the Free Software Foundation.
 *
-* Translation made by Renato Ferrari de Souza
+* Original translation made by Renato Ferrari de Souza
 * rfsouza@yahoo.com
+* Translation/Revision SOBI2 > '2.9.0.2' by Elvis Vinicius
+* elvisvinicius@pevermelho.com
 */
-
 
 // no direct access
 defined( '_SOBI2_' ) || ( trigger_error("Acesso Restrito", E_USER_ERROR) && exit() );
+
+/*
+ * added (RC 2.9.2)
+ */
+define('_SOBI2_NOENTRYINCAT', 'Nenhuma entrada nesta categoria.');
 
 /*
  * added (RC 2.9)
