@@ -14,13 +14,35 @@
 * it under the terms of the GNU Lesser General Public License as published by
 * the Free Software Foundation.
 *
-* Translation made by Renato Ferrari de Souza
+* Original translation made by Renato Ferrari de Souza
 * rfsouza@yahoo.com
+* Translation/Revision SOBI2 > '2.9.0.2' by Elvis Vinicius
+* elvisvinicius@pevermelho.com
 */
 
 // no direct access
 defined( '_SOBI2_' ) || ( trigger_error("Acesso Restrito", E_USER_ERROR) && exit() );
 define('_SOBI2_ADM_EXPERIMENTAL_OPT', ' (Experimental)');
+
+/*
+ * added (RC 2.9.2)
+ */
+/* !!!!! changed - please remove old ones */
+define('_SOBI2_MENU_ABOUT', 'Sobre o Sistema');
+define('_SOBI2_MENU_ABOUT_SOBI', 'Sobre Sigsiu.NET');
+
+define('_SOBI2_SYSTEM', 'Sistema');
+
+/*
+ * added (RC 2.9.0.2)
+ */
+define('_SOBI2_SET_TPL_DEF_EXPL', 'Clique para definir este template como o template padrão do SOBI2.');
+define('_SOBI2_SET_TPL_DEF', 'Definir como padrão');
+define('_SOBI2_PLUGINS_DEF', 'Padrão');
+define('_SOBI2_CONFIG_GENERAL_DEF_TMPL', 'Template Padrão');
+define('_SOBI2_CONFIG_GENERAL_DEF_TMPL_EXPL', 'Selecione o template padrãp para SOBI2.');
+define('_SOBI2_CONFIG_GENERAL_SORT_EXP_ASC', 'Data de Expiração Ascendente');
+define('_SOBI2_CONFIG_GENERAL_SORT_EXP_DESC', 'Data de Expiração Descendente');
 
 /*
  * added (RC 2.9)
