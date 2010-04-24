@@ -20,6 +20,9 @@ $ -> Language fix or change
 ! -> Note
 
 ------------------------------- 1.1.4 [Estável] --------------------------------
+24-Nov-20a0 ElvisVinicius
+# Aplicado fix de segurança
+
 20-Out-2009 ElvisVinicius
 ! Pacote com as mesmas aplicações da versão anterior.
 
