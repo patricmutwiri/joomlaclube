@@ -1,0 +1,13 @@
+Updater Client for Joomla
+
+************************
+
+Site.
+
+http://obupdater.com/index.php
+
+************************
+
+Site no JED - Joomla
+
+http://extensions.joomla.org/extensions/core-enhancements/installers/11342
