@@ -15,7 +15,7 @@
 	</files>
 	<languages>
 		<language tag="en-GB">en-GB.plg_editors_tinymce.ini</language>
-		<language tag="en-BR">en-BR.plg_editors_tinymce.ini</language>
+		<language tag="pt-BR">pt-BR.plg_editors_tinymce.ini</language>
 	</languages>
 	<params>
 		<param name="mode" type="list" default="extended" label="Functionality" description="Select functionality">
