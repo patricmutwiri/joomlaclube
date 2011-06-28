@@ -1,0 +1,140 @@
+####################################################################################################
+##################   Instruções para modificar/empacotar Joomla 1.6.x em pt-BR   ###################
+#                                                                                                  #
+# JoomlaClube <http://www.joomlaclube.com.br>                                                      #
+# Autor		: Elvis Vinicius <studio@elvisvinicius.com>                                            #
+# Revisão	: 6/28/11 7:57 PM                                                                      #
+#                                                                                                  #
+# Dúvidas, postar no fórum e MP para os administradores/moderadores                                #
+#                                                                                                  #
+####################################################################################################
+
+
+### REQUERIMENTOS ##################################################################################
+
+Pacote Joomla Full: Joomla_1.6.*-Stable-Full_Package.zip
+DOWNLOAD: http://www.joomla.org/download.html
+
+Tradução pt-BR oficial: pt-BR_joomla_lang_full.1.6.*.zip
+DOWNLOAD: http://joomlacode.org/gf/project/portuguesebr/frs/?action=FrsReleaseBrowse&frs_package_id=5702
+
+Tradução pt-BR tinyMCE: tinymce_language_pack.zip (Portuguese)
+DOWNLOAD: http://tinymce.moxiecode.com/i18n/index.php?ctrl=lang&act=download&pr_id=1
+
+### OBSERVAÇÕES ####################################################################################
+
+Durante edição de arquivos, configure seu editor para modo "Unicode UTF-8, no-BOM"
+e quebra de linha "Unix (LF)"
+
+
+### PROCEDIMENTOS ##################################################################################
+
+1) JOOMLA
+Descompactar pacote Joomla original "Joomla_1.6.*-Stable-Full_Package.zip"
+
+
+----------------------------------------------------------------------------------------------------
+2) TRADUÇÃO JOOMLA PT-BR
+Descompactar pt-BR_joomla_lang_full.1.6.*.zip e demais arquivos resultantes.
+
+O resultado será uma estrutura parecida com a seguinte:
+
+|-> pt-BR_joomla_lang_full.1.6.*/
+	|-> admin/ (*1)
+	|-> admin_pt-BR.zip
+	|-> install.xml
+	|-> site/ (*2)
+	|-> site_pt-BR.zip
+
+  (*1)
+  Renomear diretório para "pt-BR" e movê-lo para:
+  /Joomla_1.6.*-Stable-Full_Package/administrator/language/
+
+  (*2)
+  Renomear diretório para "pt-BR" e movê-lo para:
+  /Joomla_1.6.*-Stable-Full_Package/language/
+
+
+----------------------------------------------------------------------------------------------------
+3) TRADUÇÃO TINYMCE PT
+Descompactar arquivo "tinymce_language_pack.zip" no diretório:
+/Joomla_1.6.*-Stable-Full_Package/media/editors/tinymce/jscripts/tiny_mce/
+
+ATENÇÃO: Deve-se tomar cuidado para que os diretórios sejam mesclados e não substituídos.
+
+
+----------------------------------------------------------------------------------------------------
+4) FORÇAR INSTALAÇÃO EM PT-BR
+Editar /Joomla_1.6.*-Stable-Full_Package/installation/localise.xml
+
+Procurar:
+<forceLang></forceLang>
+
+Adicionar 'pt-BR':
+<forceLang>pt-BR</forceLang>
+
+
+----------------------------------------------------------------------------------------------------
+5) MODIFICAR CONFIGURAÇÕES PADRÕES
+Editar /Joomla_1.6.*-Stable-Full_Package/installation/sql/mysql/joomla.sql
+
+
+	------------------------------------------------------------------------------------------------
+	5.1) Modificar configuração padrão do editor wysiwyg tinyMCE:
+	-> tinyMCE em modo "Extendido", com o tema "Office Azul" e idioma da interface em "Português".
+
+	Procurar (linha 472):
+	(412, 'plg_editors_tinymce', 'plugin', 'tinymce', 'editors', 0, 1, 1, 1, '', '{***PARAMETROS-DO-PLUGIN***}', '', '', 0, '0000-00-00 00:00:00', 3, 0),
+
+	Em {***PARAMETROS-DO-PLUGIN***} modificar os seguintes parâmetros:
+	"mode":"2"
+	"skin":"1"
+	"lang_code":"pt"
+
+
+	------------------------------------------------------------------------------------------------
+	5.2) Configurar Joomla! para o idioma pt-BR como padrão:
+
+	Procurar (linha 512):
+	(700, 'Joomla! CMS', 'file', 'joomla', ***);
+
+	Adicionar na linha seguinte:
+	(linha em branco)
+	# Portuguese (Brazil) Language
+	INSERT INTO `#__extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
+	(10000,'Portuguese (Brazil)','language','pt-BR','',0,1,1,1,'','','','',0,'0000-00-00 00:00:00',0,0),
+	(10001,'Portuguese (Brazil)','language','pt-BR','',1,1,1,1,'','','','',0,'0000-00-00 00:00:00',0,0);
+	(linha em branco)
+
+
+	Procurar (linha 542):
+	(1, 'en-GB', 'English (UK)', 'English (UK)', 'en', 'en', '', '', '', 1);
+
+	Substituir por:
+	(1, 'en-GB', 'English (UK)', 'English (UK)', 'en', 'en', '', '', '', 1),
+	(2, 'pt-BR', 'Portuguese (Brazil)', 'Português (Brasil)', 'br' ,'br', '', '', '', 1);
+
+
+----------------------------------------------------------------------------------------------------
+6) CRÉDITOS JOOMLA CLUBE:
+Editar /Joomla_1.6.*-Stable-Full_Package/administrator/language/pt-BR/pt-BR.ini
+
+Procurar (linha):
+JGLOBAL_ISFREESOFTWARE
+
+Adicionar no final da string, entre as aspas:
+&nbsp;•&nbsp;<a href="_QQ_"http://www.joomlaclube.com.br/"_QQ_" target="_QQ_"_blank"_QQ_" title="_QQ_"Joomla Clube - O Portal do Joomla no Brasil"_QQ_">Joomla Clube</a>.
+
+
+----------------------------------------------------------------------------------------------------
+7) EMPACOTAR
+
+Renomear diretório:
+Joomla_1.6.*-Stable-Full_Package
+
+para:
+Joomla_1.6.*-Pacote-Completo-pt-BR-JCB
+
+
+Compactar em formato .zip:
+Joomla_1.6.*-Pacote-Completo-pt-BR-JCB.zip
