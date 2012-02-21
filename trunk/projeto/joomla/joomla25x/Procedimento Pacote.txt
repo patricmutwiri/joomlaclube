@@ -1,0 +1,19 @@
+
+
+		**  Pacote JoomlaClube **
+
+	Arquivo alterados pela JCB!
+
+		## Inserir na parte inferior do admin
+
+		- administrator\templates\bluestork\index.php
+		- administrator\templates\bluestork\login.php
+		- administrator\templates\bluestork\cpanel.php
+
+		## Inserir na parte inferior do site
+
+		- templates\beez_20\index.php
+		- templates\beez5\index.php
+		- templates\atomic\index.php
+
+	
