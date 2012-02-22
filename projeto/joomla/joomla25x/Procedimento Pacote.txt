@@ -17,3 +17,13 @@
 		- templates\atomic\index.php
 
 	
+		1 - Preparando o arquivo de instalação.
+	
+			Localizar o arquivo pkg_pt-BR.xml
+
+			
+			Procure:
+				<extension type="package" version="2.5">
+
+			Substitua por
+				<extension type="package" version="2.5" method="upgrade">
