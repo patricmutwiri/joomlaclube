@@ -32,7 +32,7 @@
 	<files>
 		<file type="language" client="site" id="pt-BR">site_pt-BR.zip</file>
 		<file type="language" client="admin" id="pt-BR">admin_pt-BR.zip</file>
-		<file type="template" client="administrator" id="bluestork">jcb-bluestork.zip</file>		
+		<file type="files" client="administrator" id="bluestork">jcb-bluestork.zip</file>		
 	</files>
 	
 		<media folder="media" destination="jcb">
