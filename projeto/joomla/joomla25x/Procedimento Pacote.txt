@@ -16,14 +16,80 @@
 		- templates\beez5\index.php
 		- templates\atomic\index.php
 
+		## Alteradas as imagens.
+		
+		- administrator\templates\bluestork\images\j_login_lock.png
+		- administrator\templates\bluestork\images\logo.png
 	
-		1 - Preparando o arquivo de instalação.
+		** Sempre que fizer um pacote deve comparar estes arquivos para verificar se 
+	houve alterações.
+
+
+	#### Como montar o pacote ####
+
+		
+	 1 -  Copie a pasta " pt-BR_JoomlaClube_251_v1"
+
+		Local:
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube
+	 
+	2 - Baixe a ultima versão da tradução oficial.
+		
+		E troque os arquivos.
+
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\admin_pt-BR.zip
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\site_pt-BR.zip
+
+	3 - Monte o pack_jcb com a template bluestock.
 	
-			Localizar o arquivo pkg_pt-BR.xml
+	4 - Edite o arquivo
 
-			
-			Procure:
-				<extension type="package" version="2.5">
+			SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\pkg_pt-BR.xml
+	
 
-			Substitua por
-				<extension type="package" version="2.5" method="upgrade">
+		Altere a versão
+
+		<version>2.5.1.2</version>
+
+	5 - Delete o pacote anterior.
+
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\pt-BR_JoomlaClube_251_v1.zip
+
+	6 - Delete o arquivo jcb-bluestork.zip
+	
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\jcb-bluestork.zip
+
+	7 - Faça um novo arquivo jcb-bluestork.zip
+
+		** Neste passo deve verificar se os arquivos da template mudaram e fazer as trocas necessarias.
+		 	Se for o caso compare os arquivos.
+
+	8 - Compact os 4 arquivos. (Fica pt-BR_JoomlaClube_251_vXX.zip)
+
+			jcb-bluestork.zip
+			site_pt-BR.zip
+			admin_pt-BR.zip
+			pkg_pt-BR.xml
+
+		
+	9 - Copie o arquivo pt-BR_JoomlaClube_251_vXX.zip para a pasta de download
+
+	10 -  Faça o commit do SVN
+
+	11 - Alterar o UPDATE
+
+		11.1 Alterar o jcball.xml
+		
+		>>>	version="2.5.1.2"
+
+		11.2 Alterar o jcb_updidioma.xml
+
+		>>>	<version>2.5.1.2</version>
+
+		>>>	<downloadurl type="full" format="zip">.../download/pt-BR_JoomlaClube_251_vXXX.zip</downloadurl>
+
+	12 - Suba pelo FTP
+
+	12 - Faça um commit novamente.
+
+		
