@@ -108,7 +108,7 @@ if ($this->params->get('highContrast')) {
 		<p class="copyright">
          <!-- Inserido pelo Pacote JoomlaClube -->
          <?php $jcb='';
-				echo JText::sprintf("<a href=\"http://www.joomlaclube.com.br\" target=\"_blank\">JoomlaClube! &#174; </a> - O seu Portal do Joomla no Brasil!<br>", $jcb) ?>
+				echo JText::sprintf("<a href=\"http://www.joomlaclube.com.br\" target=\"_blank\">JoomlaClube!&#174; </a> - O seu Portal do Joomla no Brasil!<br>", $jcb) ?>
           <!-- Fim do Pacote da JoomlaClube -->  
 			<?php $joomla= '<a href="http://www.joomla.org">Joomla!&#174;</a>';
 				echo JText::sprintf('JGLOBAL_ISFREESOFTWARE', $joomla) ?>
