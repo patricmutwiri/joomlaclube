@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="file" version="2.5" method="upgrade">
    <name>Pacote de Alterações JoomlaClube</name>
-   <version>2.5.1.3</version>
-   <creationDate>2012-02-22</creationDate>
+   <version>2.5.1.4</version>
+   <creationDate>2012-02-23</creationDate>
    <author>JoomlaClube do Brasil</author>
    <authorEmail>site@joomlaclube.com.br</authorEmail>
    <authorUrl>www.joomlaclube.com.br</authorUrl>

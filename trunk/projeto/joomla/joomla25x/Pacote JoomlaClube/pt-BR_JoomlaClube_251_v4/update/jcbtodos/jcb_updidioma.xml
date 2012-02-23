@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<updates>
+  <update>
+    <name>Português Brasil JoomlaClube</name>
+    <description>Pacote de Idioma Português do Brasil para Joomla 2.5.x da JoomlaClube</description>
+    <element>pkg_pt-BR</element>
+    <type>package</type>
+    <version>2.5.1.4</version>
+    <downloads>
+      <downloadurl type="full" format="zip">http://joomlaclube.googlecode.com/svn/trunk/projeto/joomla/joomla25x/download/pt-BR_JoomlaClube_251_v4.zip</downloadurl>
+    </downloads>
+	<maintainer>JoomlaClube Brasil</maintainer>
+     <maintainerurl>http://joomlaclube.com.br</maintainerurl>
+    <targetplatform name="joomla" version="2.5"/>
+  </update>
+</updates>
