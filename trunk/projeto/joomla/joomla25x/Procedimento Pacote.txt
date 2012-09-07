@@ -31,40 +31,65 @@
 	 1 -  Copie a pasta " pt-BR_JoomlaClube_251_v1"
 
 		Local:
-		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v5
+
+			Para nova localização
+
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_25x_vX
+
+			**Substitua o X pela nova versão
+			
 	 
-	2 - Baixe a ultima versão da tradução oficial.
+	2 - Baixe a ultima versão da tradução oficial no diretorio
+
+			Link para Baixar: http://goo.gl/CskHs
+	
+			 SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\Pacote Original
+
 		
-		E troque os arquivos.
+		
+		Descomapcte-o e troque os arquivos.
 
 		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\admin_pt-BR.zip
 		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\site_pt-BR.zip
 
-	3 - Monte o pack_jcb com a template bluestock.
-	
-	4 - Edite o arquivo
 
-			SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\pkg_pt-BR.xml
+
+
+
+	### Como montar o arquivo pack_jcb (Arquivos com todas as alterações JCB) ###
+
+
+	4 - Delete o arquivo já compactado existente.
+		
+			SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_25X_vX\jcb-pkg.zip
+			
+	
+	5 - Edite o arquivo
+
+			SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_25X_vX\pkg_pt-BR.xml
 	
 
-		Altere a versão
+		Altere a versão (Linha 5)
 
 		<version>2.5.1.2</version>
+		<creationDate>2012-09-07</creationDate>
 
-	5 - Delete o pacote anterior.
+		Salve-o.
 
-		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\pt-BR_JoomlaClube_251_v1.zip
+	6 - Compacte a nova versão a pasta "jcb-pkg"
 
-	6 - Delete o arquivo jcb-bluestork.zip
-	
-		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_251_v1\jcb-bluestork.zip
 
-	7 - Faça um novo arquivo jcb-bluestork.zip
+			SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_25X_vX\jcb-pkg.zip
 
-		** Neste passo deve verificar se os arquivos da template mudaram e fazer as trocas necessarias.
-		 	Se for o caso compare os arquivos.
 
-	8 - Compact os 4 arquivos. (Fica pt-BR_JoomlaClube_251_vXX.zip)
+
+
+
+	### Montar o pacote completo ###
+
+
+	7 - Compacte os 4 arquivos com o nome final do pacote (Fica pt-BR_JoomlaClube_251_vXX.zip)
 
 			jcb-bluestork.zip
 			site_pt-BR.zip
@@ -75,6 +100,14 @@
 	9 - Copie o arquivo pt-BR_JoomlaClube_251_vXX.zip para a pasta de download
 
 	10 -  Faça o commit do SVN
+
+
+		** Não esquece de subi-lo no servidor de arquivo atual.
+
+
+	### Atualizando o atualizador automatico ###
+
+
 
 	11 - Alterar o UPDATE
 

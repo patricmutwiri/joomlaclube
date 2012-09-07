@@ -1,0 +1,18 @@
+
+
+	### Como atualizar o pacote de tradução 2.5 ###
+
+	
+	1 - Copie a pasta abaixo e crie a pasta de tradução
+
+
+		/Pacote JoomlaClube/pt-BR_JoomlaClube_251_v5
+
+		e crie a nova pasta.
+
+		/Pacote JoomlaClube/pt-BR_JoomlaClube_25X_vX
+		
+
+	1 - Baixe a tradução oficial
+
+			
