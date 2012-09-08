@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extensionset name="Accredited Joomla! Translations" description="Accredited Joomla! Translations Updates">
+  <extension name="Pacote JoomlaClube Portugues Brasil" element="pkg_pt-BR" type="package" version="2.5.6.1" detailsurl="http://joomlaclube.com.br/update/jcbtodos/jcb_updidioma.xml"/>
+</extensionset>

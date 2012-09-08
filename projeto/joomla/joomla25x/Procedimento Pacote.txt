@@ -97,9 +97,9 @@
 			pkg_pt-BR.xml
 
 		
-	9 - Copie o arquivo pt-BR_JoomlaClube_251_vXX.zip para a pasta de download
+	8 - Copie o arquivo pt-BR_JoomlaClube_251_vXX.zip para a pasta de download
 
-	10 -  Faça o commit do SVN
+	9 -  Faça o commit do SVN
 
 
 		** Não esquece de subi-lo no servidor de arquivo atual.
@@ -109,7 +109,7 @@
 
 
 
-	11 - Alterar o UPDATE
+	10 - Alterar o UPDATE
 
 		11.1 Alterar o jcball.xml
 		
@@ -117,12 +117,22 @@
 
 		11.2 Alterar o jcb_updidioma.xml
 
-		>>>	<version>2.5.1.2</version>
+			Pegue o link de donwload aqui : http://joomlaclube.googlecode.com/svn/trunk/projeto/joomla/joomla25x/download/
+			
+		>>>	<version>2.5.1.5</version>
 
 		>>>	<downloadurl type="full" format="zip">.../download/pt-BR_JoomlaClube_251_vXXX.zip</downloadurl>
 
-	12 - Suba pelo FTP
+
+	11 - Suba pelo FTP da Joomlaclube.com.br a pasta abaixo
+
+		
+		SVN\JoomlaClube\projeto\joomla\joomla25x\Pacote JoomlaClube\pt-BR_JoomlaClube_25X_vX\update
+
 
 	12 - Faça um commit novamente.
+
+
+		@@@ Divirta-se @@@
 
 		
